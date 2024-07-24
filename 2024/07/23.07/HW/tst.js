@@ -31,15 +31,17 @@ console.log(x);
 
 function checkAge(age){
 if (age<13){
-  console.log("You are a child")
+  return("You are a child");
 
-}else if (age>=13<=17){
-  console.log("You are a teenager")
+}else if (age>=13 && age<=17){
+  return("You are a teenager");
 
-  }else if(age>=18<=64){
-  console.log("You are an adult")
+}else if(age>=18 && age <=64){
+  return("You are an adult");
 
-  }else return("You are a senior")
+}else{
+  return("You are a senior");
+}
 }
 console.log(checkAge(12))
 console.log(checkAge(17))
