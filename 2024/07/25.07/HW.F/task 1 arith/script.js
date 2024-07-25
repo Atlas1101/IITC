@@ -53,7 +53,22 @@ y--
 }
 //15
 
-let pedmas = 10 + 5 * 2
+let pedmas = 10+5*2
 console.log(pedmas);
+//16
 
+let pedmasa = (10+5)*2 //use brackets
+console.log(pedmasa);
+//17 --see question 16^^
 
+//18
+let numberToString = "345"
+let numberedString = Number(numberToString)
+console.log(numberedString)
+
+//19
+let conc = "55" + 3
+console.log(conc); //553
+//20
+let conca = "10" -5
+console.log(conca);//5 "-" is a mathematical operator + is that and more
