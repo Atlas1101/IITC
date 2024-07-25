@@ -306,3 +306,28 @@ return nage
 
 console.log(convertToUpperCaseAndAddAge("fork",400))
 
+//-----------------------------------------------------------------------
+//Capitalize first letter
+
+let word ="dog"
+function capitalize(word){
+let firstLtr = word.charAt()
+let captLtr = firstLtr.toUpperCase()
+let restOf = word.substring(1,)
+return `${captLtr}${restOf}`
+
+
+}
+console.log(capitalize("cabbage"))
+
+//-----------------------------------------------------------------
+// Check substring
+
+
+function containsSubstring(mainString,subString){
+
+  let detector = mainString.includes(subString)
+
+return "Substring found:"+ detector
+}
+console.log(containsSubstring("cabbages","abba"));
