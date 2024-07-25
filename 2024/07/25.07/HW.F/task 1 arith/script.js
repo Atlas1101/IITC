@@ -53,4 +53,7 @@ y--
 }
 //15
 
+let pedmas = 10 + 5 * 2
+console.log(pedmas);
+
 
