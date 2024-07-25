@@ -244,37 +244,65 @@ console.log(extractInitials("james","bond"));
 
 //-----------------------------------------------------------------------
 //String Replacement:
-
-
 let email = "example@example.com";
-const whereAt = email.indexOf('@')
-const atIndex = email.substring(0,whereAt)
-console.log(atIndex)
+
+function emailMask(email) {
+//Finds the index of "@"
+const whereAt = email.indexOf('@');
+//Creates a substring from the first letter of the email to @-index
+const atIndex = email.substring(0,whereAt);
+//replaces the created substring with "*****"
+const masker = email.replace(atIndex,"*****");
+return (masker)
+}
 
 
-// function maskEmail(email)
+console.log(emailMask("asdqwdqdss@hotmail.com"));
+console.log(emailMask("asdqwdqdss@hottermail.com"));
 
-// const whereAt = email.indexOf('@')
-// const atfound =  
+//-----------------------------------------------------------------
+// Nested if else
+function gradeCalculator(score){
+  if (score >=90){
+      return "A";
+    } else if (score >=80){ 
+      return "B";
+    } else if (score >=70){
+      return "C";
+    } else if (score >=60){
+      return "D";
+      }
+else return "F";
+}
+console.log(gradeCalculator(91));
+console.log(gradeCalculator(81));
+console.log(gradeCalculator(71));
+console.log(gradeCalculator(60));
+console.log(gradeCalculator(22));
 
+//---------------------------------------------------------------------
+//complex boolean conditions
+let  isCitizen = true
+function canVote(age,isCitizen){
+  if(age >=18 && isCitizen){
+    return "You are eligible to vote"}
+  else return "You are not eligible to vote"
+}
+console.log(canVote(12,isCitizen));
+console.log(canVote(18,isCitizen));
+console.log(canVote(12,!isCitizen));
+console.log(canVote(18,!isCitizen));
 
+//--------------------------------------------------------------------
+// String number conversion
 
+function convertToUpperCaseAndAddAge(aName,age){
 
+let capitalize = aName.toUpperCase();
+let numString = age.toString();
+let nage = `${capitalize}${numString}`
+return nage
+}
 
-
-//-----------------------------------------------------------------------
-
-//-----------------------------------------------------------------------
-
-//-----------------------------------------------------------------------
-
-//-----------------------------------------------------------------------
-
-//-----------------------------------------------------------------------
-
-//-----------------------------------------------------------------------
-//-----------------------------------------------------------------------
-
-
-
+console.log(convertToUpperCaseAndAddAge("fork",400))
 
