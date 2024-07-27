@@ -93,3 +93,29 @@ console.log(totalCost);
 let usernameA = "user1"
 usernameA = "admin"
 console.log(usernameA);
+
+//21
+let temperatureA = 20
+let temperatureF = (temperatureA*1.8)+32
+console.log(temperatureF);
+
+//22
+let fruit = ["apple","banana"]
+fruit.push("orange")
+console.log(fruit);
+
+//23
+const person = {name:"Old", age: 120};
+person.hobby = "taking baths"
+console.log(person);
+
+
+//24
+let count = 5
+count --
+console.log(count);
+
+//25
+let greeting = "Good "
+let restOfGreeting = greeting + "morning"
+console.log(restOfGreeting)
