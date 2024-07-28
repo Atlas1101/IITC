@@ -21,13 +21,41 @@
 // console.log(i)
 // }
 
-// line= " * "
-// for(let i="*"; i.length <= 9; i+="**"){
-//     line+=i}
-// new line
-// for(let space="     "; space.length>=4;space.slice(0,-1)){
+// line= "*"
+// for(let i="*",spaces = "     "; i.length <= 9; i+="**",spaces = spaces.slice(0, -1)){
+//     console.log(spaces + i)}
+ 
+// for (let space = "     "; space.length >= 4; spaces = spaces.slice(0, -1))
+// console.log(space+line)
+
+
+
+
+// for(let space="     "; space.length>=4;
+//     space.slice(0,-1)){ inncorect code
 //     console.log(space)
 // }
+
+// pyr=""
+
+// for(i="*";i.length<=9;i+="*"){
+//     pyr+=i +"\n"
+// }
+
+
+// spaces = ""
+// spaced=""
+// for(let spaces = "     "; spaces.length >= 0;spaces = spaces.slice(0, -1)){
+//     spaced += spaces
+
+// }
+// console.log(spaced + pyr)
+
+
+
+// for(i="*", spaces = "     "; i.length<=9;i+="*",spaces = spaces.slice(0, -1))
+
+
 
 
 
@@ -67,10 +95,17 @@
 
 // }while (i <=5)
 
-let option = ""
-let answer =""
-do{
+
+let buffet= ["Food","more food","even more food","soo much food","all the food"]
+console.log(buffet[3])
+
+buffet [1] = "man I love fooood"
+buffet.push("siiiiiiike")
+
+buffet.shift()
+console.log(buffet);
 
 
-
+for(i=0;i<buffet.length;i++){
+    console.log(buffet[i]);
 }
