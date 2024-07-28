@@ -453,12 +453,37 @@ if (pressure === "High") {
 } else {
     state = "Unknown pressure";
 }
+console.log(state);
 }
 
-console.log(state);
+
 
 //28 see question 20
 
 //29
+let side1 =1;
+let side2 =1;
+let side3 =1;
+let triangleDetector =""
+if((side1 + side2>side3)&&(side1 + side3>side2) && (side3 + side2>side1)){
+    triangleDetector= "Definitely a triangle "
+}else {triangleDetector ="I dont know what youve got but it sure aint a triangle"
+
+}
+console.log(triangleDetector);
+
+//30 I dont know how to solve this
+
+//31
+let oddEven = 11
+let checker = oddEven%2 ===0? "tis an even number you have their my liege" : "what an odd and peculiar number you have found yourself";
+console.log(checker)
+//32
+
+let ageAA = 2;
+let canAVote = ageAA >= 18 ? "vote away oldie" : "Young people dont have valid opinions. Please come back when your frontal cortex properly develops";
+
+console.log(canAVote); 
+
 
 
