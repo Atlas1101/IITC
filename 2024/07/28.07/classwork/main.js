@@ -96,16 +96,29 @@
 // }while (i <=5)
 
 
-let buffet= ["Food","more food","even more food","soo much food","all the food"]
-console.log(buffet[3])
-
-buffet [1] = "man I love fooood"
-buffet.push("siiiiiiike")
-
-buffet.shift()
-console.log(buffet);
+// practice excercises from class
 
 
-for(i=0;i<buffet.length;i++){
-    console.log(buffet[i]);
-}
+    //1 Create an array of your five favorite foods.
+    //2 Access and print the third item in your favorite foods array.
+    // 3Change the second item in your array to a different food.
+    // 4Add a new food to the end of your array using push().
+    // 5Remove the first food from your array using shift().
+    //6 Create a loop that prints all the foods in your array.
+    //7 Find the index of a specific food in your array using indexOf().
+    //8 Create an array of numbers and use a loop to calculate their sum.
+
+
+// let buffet= ["Food","more food","even more food","soo much food","all the food"]
+// console.log(buffet[3])
+
+// buffet [1] = "man I love fooood"
+// buffet.push("siiiiiiike")
+
+// buffet.shift()
+// console.log(buffet);
+
+
+// for(i=0;i<buffet.length;i++){
+//     console.log(buffet[i]);
+// }
