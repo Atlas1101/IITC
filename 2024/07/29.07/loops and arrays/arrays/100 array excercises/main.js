@@ -1,4 +1,4 @@
-//Questions1,14,16,21
+//Questions1,14,16,21,26
 
 let fruits = []
 console.log(fruits[2]);
@@ -9,16 +9,18 @@ console.log(fruits[0]);
 //21
 fruits.push("orange")
 console.log(fruits);
+fruits.unshift("mango")
+console.log(fruits);
 
 
 
-//Questions 2,11,13,17,18,22
+//Questions 2,11,13,17,18,22,27,28
 
 // finding middle index is /2 and math.floor
 
 let numbers = [1,2,3,4,5]
 
-
+console.log(numbers);
 // console.log(numbers[0]);
 // let middleValue = numbers.length/2
 // let middleElement =Math.floor(middleValue)
@@ -40,12 +42,20 @@ let numbers = [1,2,3,4,5]
 let removed = numbers.pop()
 console.log(removed);
 console.log(numbers);
+//27 working
+let removedA = numbers.shift()
+console.log(numbers);
+console.log(removedA);
+//28 working
+// numbers.unshift(71,72,73)
+// console.log(numbers);
 
 
 
 
 
-//3,15,19,23
+
+//3,15,19,23,31,33
 let colours = ["red","green", "blue"]
 console.log(colours[0]);
 console.log(`the second colours is ${colours[1]}`);
@@ -56,9 +66,18 @@ for(i=0; i<colours.length;i++){
 }
 console.log(colours);
 
-//23
+//23 workings
 colours.push("yellow","purple"," brown")
 console.log(colours);
+//31 workings
+console.log( "31="+ colours.indexOf("GREEN"))
+
+
+
+
+
+
+
 
 
 //4
@@ -68,7 +87,7 @@ console.log(mixed[1]);
 
 
 
-//5,12,20
+//5,12,20,32
 
 let seasons = new Array("spring","summer","autumn","winter")
 //console.log(seasons[-1]);
@@ -84,6 +103,12 @@ console.log(seasons[seasons.length-1]);
 
 seasons[0] = seasonHolder
 console.log(seasons);
+
+//32 workings
+let winterExists = !(-1 ===seasons.indexOf("winter"))
+
+
+console.log("winter exists = "+ winterExists);
 
 
 
@@ -121,3 +146,32 @@ for(i=0;i<=4;i++){
 console.log(blank);
 
 //25
+
+let arrayToEmpty =[1,2,3,4,5]
+for(i=arrayToEmpty.length-1;i>=0;i--){
+
+
+console.log( arrayToEmpty.pop())
+
+
+}
+console.log(arrayToEmpty);
+
+//29
+let anotherEmpty =[]
+for(i=0;i<=4;i++){
+ 
+    anotherEmpty.unshift(5 -i)
+}
+console.log(anotherEmpty);
+
+//30
+let yetAnothereEmpty =[9,8,7,6,5,6,7,8,9]
+for(i=yetAnothereEmpty.length-1;i>=0;i--){
+    console.log(yetAnothereEmpty.shift())
+
+
+}
+console.log(yetAnothereEmpty);
+
+//31
