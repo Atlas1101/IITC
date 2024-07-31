@@ -1,4 +1,4 @@
-//Questions1,14,16,21,26
+//Questions1,14,16,21,26,33,34,35
 
 let fruits = []
 console.log(fruits[2]);
@@ -11,6 +11,20 @@ fruits.push("orange")
 console.log(fruits);
 fruits.unshift("mango")
 console.log(fruits);
+//33
+fruits.push("apple")
+console.log(fruits);
+console.log(fruits.lastIndexOf("apple"));
+//34.
+fruits.unshift("apple")
+console.log(fruits);
+console.log(fruits.lastIndexOf("apple"));
+console.log(fruits.indexOf("apple"));
+//35
+
+
+
+
 
 
 
@@ -55,7 +69,7 @@ console.log(removedA);
 
 
 
-//3,15,19,23,31,33
+//3,15,19,23,31,
 let colours = ["red","green", "blue"]
 console.log(colours[0]);
 console.log(`the second colours is ${colours[1]}`);
@@ -71,7 +85,6 @@ colours.push("yellow","purple"," brown")
 console.log(colours);
 //31 workings
 console.log( "31="+ colours.indexOf("GREEN"))
-
 
 
 
@@ -174,4 +187,4 @@ for(i=yetAnothereEmpty.length-1;i>=0;i--){
 }
 console.log(yetAnothereEmpty);
 
-//31
+//

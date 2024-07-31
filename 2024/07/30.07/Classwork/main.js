@@ -216,10 +216,10 @@ for(let i=0;i <=string.length-1; i++){
                
 
 
-        // if(currentConsonent === vowels)
-        //      consonantcount = consonant + currentNum
+        if(currentConsonent === vowels)
+             consonantcount = consonant + currentNum
 
-        //     sum += currentNum
+            sum += currentNum
     }
 
 
@@ -264,3 +264,26 @@ vowelConsonantCounter("abra")
 
 
 
+//11 Instructions:
+// Take a string as input.
+// Use nested loops to compare characters from the beginning and end of the string.
+// Print whether the string is a palindrome.
+// Example Output:
+// For input = "radar", output: Palindrome
+// For input = "hello", output: Not a palindrome
+
+function isPalindrome(str){
+    
+for(let i = 0 ;i< str.length; i++){
+    let length = str.length
+   for(let j = 0 ; j < 1 ;j++){
+    if (str[i] !== str[length -1 - i]){
+        return false
+    }
+   }
+}
+
+return true
+
+}
+console.log( isPalindrome("racecar"))
