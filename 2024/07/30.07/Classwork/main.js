@@ -127,7 +127,140 @@ for(let i = 0; i<nesetedNumbers.length;i++){
 
 sumNestedNumbersArrays([[5,2], [3,20,10], [1]])
 
+// tar pattern
 
+function starPattern(){
+
+    for(let i =1; i<=5; i++){
+        let stars="";
+        for(let j =1; j <=i; j++){
+            stars+= "*"
+        }
+        console.log(stars,i);
+    }
+}
+starPattern()
+
+////////////////////////////////////////////////////////////////////
+
+function makeMultiTable(){
+
+    for(let i=1; i<=10;i++){
+   let row = ""
+    for(let j = 1;j<=10;j++){
+        row += i*j + " "
+    }
+    console.log(row);
+
+}
+}
+makeMultiTable()
+
+
+//2d array
+
+function searchInArray(array_2D,target){
+    let row =-1
+    let col =-1
+for(let i=0; i < array_2D.length; i++){
+    let currentArray = array_2D[i];
+console.log("current array", currentArray);
+
+    for(let j=0; j< currentArray.length; j++){
+        let currentNumber = currentArray[j]
+    console.log("current number : ",currentNumber);
+    if (currentNumber === target){
+        row = i
+        col = j
+        break;
+    }
+
+}
+if (row !== -1 && col !== -1){
+    break;
+}
+}
+
+console.log(`for target ${target}, output: Found at position (${row},${col})`);
+}
+
+let arr =[[1,2,3,],[4,5,6],[7,8,9],]
+searchInArray(arr,4)
+
+
+
+//////////////////////////////////////////////////
+
+function vowelConsonantCounter(string){
+    let consonantCount = 0
+
+for(let i=0;i <=string.length-1; i++){
+    
+    let letter = string[i]
+    console.log(letter);
+    let vowels = ["a", "e" ,"i","o","u","A","E","I","O","U"]
+    if(letter === vowels.includes(letter)){
+        consonantCount +=1
+        console.log(consonantCount);
+    }
+}
+        
+
+
+    for(let j=0; j<=letter.length;j++){
+        let currentConsanent = letter[j]
+        console.log(currentConsanent);
+           let vowels = ["a","e","i","o","u","A","E","I","O","U"]
+    if(currentConsanent !== vowels){
+        
+               
+
+
+        // if(currentConsonent === vowels)
+        //      consonantcount = consonant + currentNum
+
+        //     sum += currentNum
+    }
+
+
+
+
+
+vowelConsonantCounter("abra")
+
+
+
+// function vowelConsonantCounter(string){
+//     let consonantCount = 0
+
+// for(let i=0;i <=string.length; i++){
+    
+//     let letter = string[i]
+//     console.log(letter);
+
+
+
+//     for(let j=0; j<=vowels.length;j++){
+//         let currentConsanent = letter[j]
+//         console.log(currentConsanent);
+//            let vowels = ["a","e","i","o","u","A","E","I","O","U"]
+//     if(currentConsanent !== vowels){
+        
+               
+
+
+        // if(currentConsonent === vowels)
+        //      consonantcount = consonant + currentNum
+
+        //     sum += currentNum
+//     }
+
+
+// }
+
+// }
+// }
+// vowelConsonantCounter("abra")
 
 
 
