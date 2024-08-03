@@ -378,22 +378,133 @@
 
 // 26
 
-function counter(){
-let row =""
-for(let i =0; i<=2;i++){
+// function counter(){
+
+// let brow =""
+// for(let i =0; i<=2;i++){
     
-    for(let j =0; j<=i;j++)
-}
-console.log(sum);
-}
-counter()
+   
+//     for(let j =0; j<=2;j++){
+//         brow += "*"
+//         break
+         
+        
+        
+//     }
+//     console.log(brow);
+// }
+// }
+// counter()
 
 
 
 //
-//
-//
-//
+// function counter(){
+
+// let brow =""
+
+//     for(let j =0; j<=2;j++){
+//         brow += "*"
+        
+         
+        
+        
+//         console.log(brow);
+//     }
+// }
+// counter()
+
+
+
+
+
+
+
+//27
+
+// function counter(number){
+
+
+// for(let i =0; i<=number-1;i++){
+//     let brow =""
+    
+//     for(let j =0; j<=number-1;j++){
+//         brow += " * "
+        
+        
+        
+        
+        
+//     }
+//     console.log(brow); 
+// }
+// }
+// counter(10)
+
+
+
+// 28
+// function counter(number){
+
+
+// for(let i =0; i<=number-1;i++){
+//     let row = ""
+    
+//     for(let j =0; j<=i;j++){
+//         row += j+1     
+        
+        
+        
+//     }
+//     console.log(row); 
+// }
+// }
+// counter(12)
+
+
+
+//29
+// function counter(number){
+
+
+// for(let i =1; i<=number-1;i++){
+//     let row = ""
+    
+//     for(let j =1; j<=number;j++){
+//         row += i*j+" "     
+        
+        
+        
+//     }
+//     console.log(row); 
+// }
+// }
+// counter(5)
+
+//30
+// function counter(number){
+
+
+// for(let i =1; i<=number-1;i++){
+//     let row = ""
+    
+//     for(let j =1; j<=i;j++){
+//         row += i 
+        
+        
+        
+//     }
+//     console.log(row); 
+// }
+// }
+// counter(5)
+
+
+
+
+
+
+
 //
 
 
