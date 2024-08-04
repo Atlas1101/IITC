@@ -505,6 +505,310 @@
 
 
 
-//
+/////////////////////////////////////////////
+//nested loops
 
 
+//1
+
+
+// function counter(number){
+
+
+// for(let i =1; i<=number-1;i++){
+//     let row = ""
+    
+//     for(let j =1; j<=number;j++){
+//         row += " * "
+        
+        
+        
+//     }
+//     console.log(row); 
+// }
+// }
+// counter(5)
+
+//2
+
+// let counter =0
+
+// for(let i =0; i<=1;i++){
+//     let row = ""
+//     for(let j =0; j<=1;j++){
+//         counter += 1
+//         row += counter
+   
+        
+//     }
+//     console.log(row); 
+// }
+
+
+//3
+
+
+
+// for(let i =0; i<=2;i++){
+//     let row = ""
+//     for(let j =0; j<=i;j++){
+        
+//         row += "*"
+   
+        
+//     }
+//     console.log(row); 
+// }
+
+
+//4
+
+
+
+// for(let i =0; i<=2;i++){
+//     let row = ""
+//     for(let j =0; j<=2;j++){
+        
+//         row += i+j + " "
+   
+        
+//     }
+//     console.log(row); 
+// }
+
+
+//5
+// for(let i =1; i<=3;i++){
+//     let row = ""
+//     for(let j =1; j<=3;j++){
+        
+//         row += i*j + " "
+   
+        
+//     }
+//     console.log(row); 
+// }
+
+//6
+
+// function asterix(number){ 
+
+
+// for(let i =0; i<number;i++){
+
+
+//     let row = ""
+
+
+
+
+//     for(let j =0; j<number;j++){
+//         if(i ===0 || i===number-1){
+//             row +=  " * "
+//         } else if (j ===0 || j===number-1 ){
+
+//             row +=" * "
+//         }
+//         else {
+//             row += "   "
+//         }
+        
+        
+//     }
+//     console.log(row); 
+// }
+// }
+// asterix(4)
+
+
+
+//7
+
+// let counter = 1
+//  for(let i =0; i<=2;i++){
+//     let row = ""
+//     for(let j =0; j<=2;j++){
+        
+//         row += counter
+        
+        
+        
+//         counter ++
+//     }
+//     console.log(row); 
+// }
+
+
+//8
+// let counter = 2
+// for(let i =0; i<=2;i++){
+//     let row = ""
+//     for(let j =0; j<=2;j++){
+        
+//         row += counter + "  "
+
+//         counter+=2
+   
+        
+//     }
+//     console.log(row); 
+// }
+
+
+
+//9
+
+// for(let i =0; i<=5;i++){
+//     let row = ""
+//     for(let j =0; j<=i;j++){
+        
+//         row += j
+
+        
+   
+        
+//     }
+//     console.log(row); 
+// }
+
+
+
+//10
+
+// function check(size){
+// for(let i =0; i<=size-1;i++){
+//     let row = ""
+//     for(let j =0; j<=size-1;j++){
+        
+//         if((i+j)%2===0){
+//         row += 0 +" "
+//         }
+//         else {
+//             row+=1 +" "
+//         }
+
+        
+   
+        
+//     }
+//     console.log(row); 
+// }
+// }
+// check(10)
+
+/////////////////////////////////////////////////////////////
+//omers nested loops
+
+//2
+
+
+// for(let i =1; i<=10;i++){
+//     let row = ""
+//     for(let j =1; j<=10;j++){
+        
+//         row += j*i +" "
+
+        
+   
+        
+//     }
+//     console.log(row); 
+// }
+
+//14
+
+// let arry = [[3, 1, 2], [1, 4, 5], [2, 3, 1]]
+// let arrysum =[]
+
+// for(let i =0; i<=arry.length-1;i++){
+//     let sum = 0
+
+//     let main = arry[i]
+//     //console.log(main);
+
+//     for(let j =0; j<=main.length-1;j++){
+        
+//         let sub = main[j]
+    
+
+//         sum +=sub
+       
+        
+        
+   
+        
+        
+//     }
+     
+     
+// }
+/////////////////////////////////////////////
+objects
+
+// let students = [
+//  {id: "1", name: "omer"}
+//  {id: "2", name: "avi"}
+//  {id: "3", name: "gaga"}
+
+
+// ];
+
+// function getValuesFromKey(array,key){
+
+//     let newArray = []
+// for(i=0; i>array.length;i++)
+//     newArray.push()array[i][key])
+// }
+//     return newArray
+
+
+// }
+// log(getValuesFromKey(students, "name"))
+
+
+
+
+// /* 
+//   Write a function "groupBy" that takes 
+//   an array of objects and a key.
+//   returns an object where each key is a unique value 
+//   from the employees array and the corresponding value 
+//   is an array containing the employees that belong to that key.
+//   Example:
+// */
+let employees = [
+  { name: "John Doe", department: "Engineering", yearsOfExp: 5 },
+  { name: "Jane Smith", department: "Marketing", yearsOfExp: 8 },
+  { name: "Peter Johnson", department: "Engineering", yearsOfExp: 5 },
+  { name: "Lucy Brown", department: "Marketing", yearsOfExp: 10 },
+  { name: "Mike Davis", department: "Engineering", yearsOfExp: 3 },
+  { name: "Sara Wilson", department: "Marketing", yearsOfExp: 8 },
+];
+
+
+function groupBy(employees, key) {
+    let group = {};
+    for(i=0; i>employees.length;i++){
+        group.push(employees[i][key])
+     }
+    //     return newArray
+    
+    
+    return group;
+}
+console.log(groupBy(employees, "department"));
+
+/*
+{
+  Engineering: [
+    { name: 'John Doe', department: 'Engineering', yearsOfExp: 5 },
+    { name: 'Peter Johnson', department: 'Engineering', yearsOfExp: 5 },
+    { name: 'Mike Davis', department: 'Engineering', yearsOfExp: 3 }
+  ],
+  Marketing: [
+    { name: 'Jane Smith', department: 'Marketing', yearsOfExp: 8 },
+    { name: 'Lucy Brown', department: 'Marketing', yearsOfExp: 10 },
+    { name: 'Sara Wilson', department: 'Marketing', yearsOfExp: 8 }
+  ]
+}
+*/
