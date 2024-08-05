@@ -153,6 +153,7 @@
 // addProperty(student, "hobby", "Acrobatics");
 // console.log("Updated Student:", student);
 
+// TODO: Write a function to update a student's grade in a subject
 
 // let school = {
 //   name: "Greenwood High",
@@ -162,11 +163,16 @@
 //   },
 //   students: [
 //     { id: 1, name: "Alice", grades: { math: 85, english: 78 } },
-//     { id: 2, name: "Bob", grades: { math: 92, english: 88 } },
+//     { id: 2, name: "Bob", grades: { math: 92, english: 88 } },{ id: 3, name: "chris", grades: { math: 12, english: 20 } },
 //   ],
 // };
 
-// TODO: Write a function to update a student's grade in a subject
+
+
+
+
+
+
 // function updateStudentGrade(school, studentId, subject, newGrade) {
 
 //   for(let i=0; i<school.students.length;i++){
@@ -236,4 +242,64 @@
 // console.log(` Book id${bookId} not found`)
 
 
-//
+// ques from chat gpt on mistakes
+
+//1
+// let student = { name: "John", address: { city: "New York", zip: "10001" } }
+
+// function cityup(newCity){
+//  student.address.city = newCity
+ 
+
+// }
+// cityup("london")
+// console.log(student);
+
+//2
+
+
+// function up(object, key,value){
+//     if(!(key in object)){
+//         object[key] = value
+    
+//     }
+//     else{
+//         return
+//     }
+
+// }
+// up(student,"name","black")
+// console.log(student);
+
+//3
+
+// let library = { books: [ { id: 1, title: "1984", copies: 5 }, { id: 2, title: "Brave New World", copies: 3 } ] };
+
+
+
+
+
+// function upd(library,id,coppa){
+//     let found = false
+//   for(let i=0;i<library.books.length;i++){
+//     let currentBook =library.books[i]
+// if(currentBook.id === id){
+//     currentBook.copies += coppa
+//      found = true
+// }
+
+// }
+// if (!found){console.log("we cant fund your book mate");}
+// }
+// upd(library,3,122)
+// console.log(library);
+
+
+//4
+// let car = { model: "Tesla", specs: { range: 300, battery: "100 kWh" } }
+
+// car.specs.range.splice()
+
+
+
+// ;, write code to extract and print the range value.
