@@ -304,56 +304,74 @@
 
 // ;, write code to extract and print the range value.let myProduct = {
 
-let myProducts = [
-  {
-    id: "p1",
-    name: "laptop",
-    price: 1000,
-    isAvailable: true,
+// let myProducts = [
+//   {
+//     id: "p1",
+//     name: "laptop",
+//     price: 1000,
+//     isAvailable: true,
 
-    info: {
-      color: "#fff",
-      sizes: ["MD", "L"],
-    },
-  },
-  {
-    id: "p2",
-    name: "mouse",
-    price: 400,
-    isAvailable: false,
-    info: {
-      color: "#000",
-      sizes: ["S", "MD"],
-    },
-  },
-  {
-    id: "p3",
-    name: "desk",
-    price: 600,
-    isAvailable: true,
-    info: {
-      color: "#000",
-      sizes: ["L", "XL"],
-    },
-  },
-];
+//     info: {
+//       color: "#fff",
+//       sizes: ["MD", "L"],
+//     },
+//   },
+//   {
+//     id: "p2",
+//     name: "mouse",
+//     price: 400,
+//     isAvailable: false,
+//     info: {
+//       color: "#000",
+//       sizes: ["S", "MD"],
+//     },
+//   },
+//   {
+//     id: "p3",
+//     name: "desk",
+//     price: 600,
+//     isAvailable: true,
+//     info: {
+//       color: "#000",
+//       sizes: ["L", "XL"],
+//     },
+//   },
+// ];
 
-function getSizesCount(products) {
-    let sizeMap = {}
+// function getSizesCount(products) {
+//     let sizeMap = {}
 
-    for(let i=0 ;i<products.length;i++){
-        let currentsizes =products[i].info.sizes
+//     for(let i=0 ;i<products.length;i++){
+//         let currentsizes =products[i].info.sizes
 
 
-        for(let j=0 ;j<currentsizes.length;j++){
-            let currentSize =currentsizes[j]
+//         for(let j=0 ;j<currentsizes.length;j++){
+//             let currentSize =currentsizes[j]
             
-            if(sizesMap[currentSize] ===undefined)
+//             if(sizesMap[currentSize] ===undefined)
                 
 
 
-        }
-    }
+//         }
+//     }
 
+// }
+// getSizesCount(myProducts)
+
+
+function stars(number){
+
+for(let i=1; i<number;i++){
+
+  let row = ""
+
+
+
+for(let j=0; j<i;j++){
+  row += j+1
 }
-getSizesCount(myProducts)
+
+console.log(row);
+}
+}
+stars(12)
