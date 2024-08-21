@@ -64,6 +64,12 @@ addCategory(product_1, "gadgets");
 // TODO: Write a function to check if the product is available (return true if available, false otherwise)
 function isProductAvailable(product) {
 
+  product.isAvailable 
+
+
+
+
+  
 
   return product.isAvailable
   
@@ -84,24 +90,24 @@ console.log("Is Product Available:", isAvailable);
 
 // 🙂 Task 4: Find Product by Name 🙂
 // TODO: Write a function to find a product by name
-function findProductByName(products, productName) {
-    let foundProduct = ""
-    for(let i=0;i<products.length;i++){
+// function findProductByName(products, productName) {
+//     let foundProduct = ""
+//     for(let i=0;i<products.length;i++){
 
-    if(productName === myProducts[i].name){
-    return foundProduct = myProducts[i].name
-    }else foundProduct = "Product not found"
-  }
-}
-
-
+//     if(productName === myProducts[i].name){
+//     return foundProduct = myProducts[i].name
+//     }else foundProduct = "Product not found"
+//   }
+// }
 
 
 
 
 
-const foundProduct = findProductByName(myProducts, "Phone");
-console.log("Found Product:", foundProduct);
+
+
+// const foundProduct = findProductByName(myProducts, "Phone");
+// console.log("Found Product:", foundProduct);
 
 
 // 🙂 Task 5: Count Products in Category 🙂
@@ -181,21 +187,21 @@ const ages = getStudentAges(students);
 
 // 🤨 Task 8: Get Average product prices 🤨
 // TODO: Write a function to get the average price of all products
-function getAveragePrice(products) {
-   let  AvPrice = 0
-   let productCount =0
-  for(let i=0;i<products.length;i++){
-    let currentPrice = products[i].price
-    console.log(currentPrice);
+// function getAveragePrice(products) {
+//    let  AvPrice = 0
+//    let productCount =0
+//   for(let i=0;i<products.length;i++){
+//     let currentPrice = products[i].price
+//     console.log(currentPrice);
   
   
-   AvPrice += currentPrice
-   productCount ++
-   console.log(productCount);
+//    AvPrice += currentPrice
+//    productCount ++
+//    console.log(productCount);
    
-}
-let totalAvg = AvPrice/productCount
-return totalAvg
+// }
+// let totalAvg = AvPrice/productCount
+// return totalAvg
 
 
 
@@ -205,9 +211,9 @@ return totalAvg
 
 
 
-}
-const averagePrice = getAveragePrice(myProducts);
- console.log("Average Price:", averagePrice);
+// }
+// const averagePrice = getAveragePrice(myProducts);
+//  console.log("Average Price:", averagePrice);
 
 
 // 🤨 Task 9: Add Grade to Student 🤨
@@ -246,9 +252,28 @@ const c_count = countCharacterOccurrences(strings, "c");
 
 // 😥 Task 11: Update Product Price by Name 😥
 // TODO: Write a function to update the price of a product by name (You can mutate the original object)
-function updatePriceByName(products, productName, newPrice) {
-  // your code here
-}
+// function updatePriceByName(products, productName, newPrice) {
+  
+//   for(let i= 0;i<products.length; i++){
+//     let current =products[i] 
+   
+//     if (current.name ===productName){
+//       current.price =newPrice
+//       return current
+
+//     }
+    
+    
+
+
+//   }
+
+
+  
+
+// }
+// let updatedProduct = updatePriceByName(myProducts,"Laptop",1000000) 
+// console.log(updatedProduct);
 
 
 // 😥 Task 12: Get Uppercase Strings 😥
