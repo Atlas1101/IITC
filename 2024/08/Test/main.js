@@ -35,6 +35,11 @@ const strings = [
   "no more lives",
   "and of session",
   "good discussion",
+  "what is good broder",
+  "what is good my broder",
+  
+
+
 ];
 
 
@@ -274,21 +279,38 @@ const c_count = countCharacterOccurrences(strings, "c");
 // }
 // let updatedProduct = updatePriceByName(myProducts,"Laptop",1000000) 
 // console.log(updatedProduct);
+//updatePriceByName(myProducts, "Phone", 550);
+// console.log("Updated Products:", products);
+
+
+
 
 
 // 😥 Task 12: Get Uppercase Strings 😥
 // TODO: Write a function to get an array of uppercase strings (You should return a new array)
-function getUppercaseStrings(strings) {
-  // your code here
-}
+
+// function getUppercaseStrings(strings) {
+
+//   let uppercaseStrings = []
+//   console.log(uppercaseStrings);
+  
+
+//   for(let i =0;i<strings.length; i++ ){
+//     let currentString = strings[i]
+  
+//      uppercaseStrings.push(currentString.toUpperCase())
+    
+    
+    
+//   }
+//   return uppercaseStrings
+// }
 
 
-const uppercaseStrings = getUppercaseStrings(strings);
+// const uppercaseStrings = getUppercaseStrings(strings);
 // console.log("Uppercase Strings:", uppercaseStrings);
 
 
-updatePriceByName(myProducts, "Phone", 550);
-// console.log("Updated Products:", products);
 
 
 // 🥵 Task 13: group strings by spaces occurences 🥵
@@ -296,36 +318,121 @@ updatePriceByName(myProducts, "Phone", 550);
 // The function should return an object where keys are the number of spaces and values are arrays of strings.
 
 
-function groupStringsBySpaces(strings) {
-  // your code here
-}
+// function groupStringsBySpaces(strings) {
+//   let spaceCounter = {
+
+//   }
+  
+//   for(let i = 0; i<strings.length; i++) {
+//     let currentString = strings[i];
+    
+//     let spaceCount = 0;
+
+//     for (let j = 0; j < currentString.length; j++) {
+//       let currentCharacter = currentString[j];
+//       if(currentCharacter === " ") {
+//         spaceCount++;
+//       }       
+//     }    
+    
+//     if (spaceCounter[spaceCount] == undefined) {
+//       spaceCounter[spaceCount] = [];
+//     } 
+//     spaceCounter[spaceCount].push(currentString);
 
 
-const groupedStrings_1 = groupStringsBySpaces(strings);
+//   }
+
+//   return spaceCounter
+// }
+// const groupedStrings_1 = groupStringsBySpaces(strings);
 // console.log("Grouped Strings By Spaces:", groupedStrings_1);
 
 
-// 🥵 Task 14: group strings by length 🥵
-//TODO: Write a function to group strings by length.
-// The function should return an object where keys are the length of the strings and values are arrays of strings.
 
 
-function groupStringsByLength(strings) {
-  // your code here
-}
+// // 🥵 Task 14: group strings by length 🥵
+// //TODO: Write a function to group strings by length.
+// // The function should return an object where keys are the length of the strings and values are arrays of strings.
 
 
-const groupedStrings_2 = groupStringsByLength(strings);
-// console.log("Grouped Strings By Length:", groupedStrings);
+// function groupStringsByLength(strings) {
+
+//   let letterNumber = {};
+
+
+//   for(let i =0; i<strings.length; i++) {
+//     let currentStr = strings[i];
+//     let charCount = 0;
+
+//     for (let j = 0; j < currentStr.length; j++) {
+//       charCount++;
+//     }
+
+//     if (letterNumber[charCount] === undefined){
+//       letterNumber[charCount] = [];
+//     }
+//     letterNumber[charCount].push(currentStr);
+//   }
+  
+//   return letterNumber;
+// }
+// const groupedStrings_2 = groupStringsByLength(strings);
+// console.log("Grouped Strings By Length:", groupedStrings_2);
+
+
+//chat gpt says
+//  for (let i = 0; i < strings.length; i++) {
+//         let currentStr = strings[i];
+//         let length = currentStr.length;
+
+//         // Initialize array for this length if it doesn't exist
+//         if (lengthGroups[length] === undefined) {
+//             lengthGroups[length] = [];
+
+//or 
+// if (!lengthGroups[length]) {
+//       lengthGroups[length] = [];
+//     }
+
+//     // Add the current string to the appropriate length array
+//     lengthGroups[length].push(currentStr);
+
+
+
+
 
 
 // 🥵 Task 15: Capitalize Strings 🥵
 // TODO: Write a function to capitalize the first letter of each string in the array (You should return a new array)
 // Bonus: Capitalize the first letter of each word in the string (split by space)
 function capitalizeStrings(strings) {
-  // your code here
-}
+    let capitalizedStrs = []
 
+
+  for(let i =0; i<strings.length; i++) {
+    let currentStr = strings[i];
+    
+    
+
+
+
+
+    for (let j = 0; j < 1; j++) {
+      let firstLetter = currentStr[j]
+      
+      
+     
+      
+
+      
+      
+      
+      currentStr.replace(currentStr.charAt(0),firstLetter.toUpperCase())
+    }
+    
+  }
+}
 
 const capitalizedStrings = capitalizeStrings(strings);
 // console.log("Capitalized Strings:", capitalizedStrings);
