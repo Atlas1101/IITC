@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Task</title>
+    <style>
+        .yellow-box{
+            outline: 3px solid blue;
+        background-color: yellow;
+        padding-top: 5px; 
+        padding-bottom: 5px;
+        }
+        .yellow-box .first {
+            color : red;
+            padding-left: 20px;
+        }
+        .yellow-box .second{
+            margin-left: 20px;
+            margin-right: 20px;
+            padding: 20px;
+            color:white;
+            background-color: grey;
+            border-radius: 12px;     
+        }
+        .circle{
+            display: inline-block;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        } 
+        .inner-box {
+            background-color: red;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto ;
+            height:250px;
+            width: 80%;
+            position: relative;         
+        }
+        .object{
+            background-color: black;
+            color: white;
+            display: inline-block;
+            padding: 10px;
+        }
+        .button{
+            background-color: blueviolet;
+            display: inline-block;
+            padding: 10px;
+            height: auto;
+            width: auto;
+            margin-left: 0px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+        }  
+    </style>
+</head>
+<body>
+
+    <div class="yellow-box">   
+        <p class="first"> 1st Lorem ipsum dolor sit amet consectetur. 
+        <br><br>
+        2nd Lorem ipsum dolor <span style ="color:black"> BLACK</span> sit amet consectetur.
+        </p>
+        <p class="second">
+        3rd Lorem ipsum dolor sit amet consectetur
+        </p>
+    </div>
+<br>
+    <div class="yellow-box" style="padding-left: 20px;">
+        <p class="circle" style="background-color: red;"></p>       
+        <p class="circle" style="background-color: blue;"></p>
+        <p class="circle" style="background-color: green;"></p>       
+    </div>
+<br>
+    <div class="yellow-box" >
+        <div class="inner-box" >
+            <div class ="object" >
+            left
+            </div>
+
+            <div class="object" style="position: absolute;
+            top: 20%;
+            right: 0%;">
+            right       
+            </div>
+            <div class="object" style="position: absolute;
+            top: 50%;
+            left: 50%;
+             transform: translate(-50%, -50%);
+            box-shadow: 2px 5px 6px 2px white;
+            border-radius: 50%;">
+            middle
+            </div>
+        </div>
+
+     </div>
+    
+
+<br>
+
+    <div class="button">
+        EXPLORE
+    </div>
+
+    <div class="button" style="border-radius: 1000px">
+        JOIN
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>

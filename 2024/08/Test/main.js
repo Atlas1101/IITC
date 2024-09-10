@@ -36,7 +36,7 @@ const strings = [
   "and of session",
   "good discussion",
   "what is good broder",
-  "what is good my broder",
+  "tell me good things my broder",
   
 
 
@@ -318,35 +318,35 @@ const c_count = countCharacterOccurrences(strings, "c");
 // The function should return an object where keys are the number of spaces and values are arrays of strings.
 
 
-// function groupStringsBySpaces(strings) {
-//   let spaceCounter = {
+function groupStringsBySpaces(strings) {
+  let spaceCounter = {
 
-//   }
+  }
   
-//   for(let i = 0; i<strings.length; i++) {
-//     let currentString = strings[i];
+  for(let i = 0; i<strings.length; i++) {
+    let currentString = strings[i];
     
-//     let spaceCount = 0;
+    let spaceCount = 0;
 
-//     for (let j = 0; j < currentString.length; j++) {
-//       let currentCharacter = currentString[j];
-//       if(currentCharacter === " ") {
-//         spaceCount++;
-//       }       
-//     }    
+    for (let j = 0; j < currentString.length; j++) {
+      let currentCharacter = currentString[j];
+      if(currentCharacter === " ") {
+        spaceCount++;
+      }       
+    }    
     
-//     if (spaceCounter[spaceCount] == undefined) {
-//       spaceCounter[spaceCount] = [];
-//     } 
-//     spaceCounter[spaceCount].push(currentString);
+    if (spaceCounter[spaceCount] == undefined) {
+      spaceCounter[spaceCount] = [];
+    } 
+    spaceCounter[spaceCount].push(currentString);
 
 
-//   }
+  }
 
-//   return spaceCounter
-// }
-// const groupedStrings_1 = groupStringsBySpaces(strings);
-// console.log("Grouped Strings By Spaces:", groupedStrings_1);
+  return spaceCounter
+}
+const groupedStrings_1 = groupStringsBySpaces(strings);
+console.log("Grouped Strings By Spaces:", groupedStrings_1);
 
 
 
@@ -406,6 +406,13 @@ const c_count = countCharacterOccurrences(strings, "c");
 // 🥵 Task 15: Capitalize Strings 🥵
 // TODO: Write a function to capitalize the first letter of each string in the array (You should return a new array)
 // Bonus: Capitalize the first letter of each word in the string (split by space)
+
+
+
+
+
+
+
 function capitalizeStrings(strings) {
     let capitalizedStrs = []
 
@@ -413,29 +420,44 @@ function capitalizeStrings(strings) {
   for(let i =0; i<strings.length; i++) {
     let currentStr = strings[i];
     
+   capitalizedStrs.push(currentStr.replace(currentStr.charAt(0),currentStr.charAt(0).toUpperCase()))
+  }
+
+
+
+     for(let j =0; j<capitalizedStrs.length; j++){
+      
+     for(let k =0; k<capitalizedStrs[k].length; k++){
+        if()
+        if(capitalizedStrs[k]=== " "){
+         capitalizedStrs[k].replace(capitalizedStrs[k].chatAt(currentStr.indexOf(" ")+1),capitalizedStrs[k].chatAt(currentStr.indexOf(" ")+1).toUpperCase())
+         
+          //currentStr[j+=1] = currentStr[j].toUpperCase()
+          
+          
+        }
+
+
+
+     } 
+
+
     
-
-
-
-
-    for (let j = 0; j < 1; j++) {
-      let firstLetter = currentStr[j]
-      
-      
-     
-      
-
-      
-      
-      
-      currentStr.replace(currentStr.charAt(0),firstLetter.toUpperCase())
-    }
+    
+    
+    
+    
+    
+    
     
   }
-}
+    return capitalizedStrs
+  }
+
+
 
 const capitalizedStrings = capitalizeStrings(strings);
-// console.log("Capitalized Strings:", capitalizedStrings);
+ console.log("Capitalized Strings:", capitalizedStrings);
 
 
 
