@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        background-color: #fdfcdc;
+    }
+        * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        display: flex;
+        background-color: #0081a7;
+        height: auto;
+        padding: 5px;
+        align-items: center;
+        
+        
+        
+    }
+    nav a{
+        color: #fdfcdc;
+        font-size: 20px;
+        text-decoration: none;
+        padding: 5px;
+        border-radius: 7px;
+        outline: solid #fdfcdc;
+        outline-width: 0.5px;
+        margin-inline: 3px;
+        
+        
+    }
+    .home{
+        margin-left: 0;
+        color: #fdfcdc;
+    }
+        
+        .father-box{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap:15px;
+        padding: 15px;
+        
+        
+        }
+    .box{
+        flex-grow: 1;
+        height: 250px;
+        width: 200px;
+        background-color: #f07167;
+        color: #fdfcdc;
+        padding: 5px;
+    }
+
+    .search-box{
+        margin-left: auto;
+        margin-right: auto;
+        display: flexbox;
+        min-width: 80px;
+        flex-wrap: nowrap;
+    }
+    .search-box input[type="text"]{
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 16px;
+        color: #0081a7;
+        outline: none;
+        border: none;
+    }
+        .search-box button{
+            padding: 5px;
+            color:#0081a7;
+            border-radius: 5px;
+            font-size: 15px;
+            outline: none;
+            border: #0081a7;
+            cursor: pointer;
+            background-color: #fdfcdc;
+        }
+    
+
+</style>
+</head>
+<body>
+    <nav>
+        <a class="home" href="">Home</a>
+        <div class="search-box">
+            <input type="text" placeholder="What you looking for?">
+            <button>Search</button>
+        </div>
+        <a href="">Login</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+
+    </nav>
+
+    <div class="father-box">
+        <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ipsum incidunt veniam suscipit adipisci exercitationem, eius facere est obcaecati odit, dolore sequi explicabo libero quis esse. Ducimus illo sed aspernatur.
+        </div>
+        <div class="box">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae nobis maiores inventore totam ipsa doloremque consequatur sed doloribus necessitatibus commodi. Aliquam ipsum aspernatur illum vel, consectetur ad atque quia totam?
+        </div>
+        <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, repudiandae saepe! Commodi, inventore? Iusto, quia vero similique ratione rem a consequatur fuga reiciendis, odio ullam neque dolorum? Aliquam, libero consectetur.
+        </div>
+    </div>
+
+</body>
+</html>
