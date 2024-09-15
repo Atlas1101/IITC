@@ -1,0 +1,93 @@
+
+:root {
+    --color-priamry-400: hsl(277, 64%, 61%);
+    --color-priamry-500: hsl(277, 64%, 40%);
+
+    --color-bg-900: hsl(233, 49%, 7%);
+    --color-bg-800: hsl(244, 38%, 16%);
+
+    --color-neutral-50: hsl(0, 0%, 100%);
+    --color-neutral-100: hsl(0, 0%, 100%, 0.75);
+    --color-neutral-150: hsl(0, 0%, 100%, 0.6);
+}
+   *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+    }
+    .body{
+        background-color: var(--color-bg-900);
+    }
+
+    .inter-normal {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    }
+    .inter-bold {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    }
+    .lexend-deca-normal {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    }
+    .image-wrapper{
+        
+    }
+    .image-overlay{
+        
+       background-color:hsl(277, 64%, 61%);
+    }
+    .article-card{
+        background-color: hsl(244, 38%, 16%);
+    }
+
+    .article-title{
+        @font-face {
+            font-family: ;
+            src: url();
+        }
+
+    }
+    .main-text{
+
+    }
+    .stats{
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <style>.attribution {
+font-size: 11px;
+text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+   </style> */
