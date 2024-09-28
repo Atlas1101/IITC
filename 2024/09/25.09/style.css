@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    /* height: 100%; */
+}
+
+ul {
+    list-style: none;
+}
+
+.flex-center {
+    min-height: 1cqw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+}
+
+.base {
+    display: grid;
+    grid-template-rows: 40px 3fr 1fr 3fr;
+    grid-template-columns: 1fr;
+}
+
+.top-bar {
+    grid-row: 1;
+    /* grid-column: 1 / span 2; */
+    background-color: aqua;
+    text-align: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    align-self: center;
+}
+
+.dropdownf {
+    position: relative;
+    display: inline-block;
+    align-self: center;
+}
+
+.dropdownE {
+    position: relative;
+    display: inline-block;
+    align-self: center;
+}
+
+.dropContentDesignE {
+    display: none;
+    position: absolute;
+
+    min-width: 160px;
+
+    background-color: #ffffff;
+
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.add-emp label,
+.add-emp input,
+.add-emp select,
+.add-emp button {
+    display: block;
+    margin-bottom: 5px;
+    /* Adds space between fields */
+}
+
+.contentE {
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+    background-color: white;
+}
+
+.delete-area {
+    position: relative;
+    display: inline-block;
+    align-self: center;
+}
+
+.dropContentDesign {
+    display: none;
+    position: absolute;
+
+    min-width: 160px;
+
+    background-color: #ffffff;
+
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.add-emp label,
+.add-emp input,
+.add-emp select,
+.add-emp button {
+    display: block;
+    margin-bottom: 5px;
+    /* Adds space between fields */
+}
+
+.add-emp {}
+
+.content {
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+    background-color: white;
+}
+
+.show {
+    display: block;
+}
+
+.dropContentDesignf {
+    display: none;
+    position: absolute;
+    right: 5px;
+    top: 60px;
+
+
+    min-height: 150px;
+    min-width: 160px;
+    background-color: #c33d3d;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropContentDesignf.show {
+    display: block;
+}
+
+
+.view {
+    grid-row: 2;
+    /* grid-column: 1; */
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1fr 1fr;
+}
+
+#picture {
+    background-color: rgb(82, 17, 188);
+    height: 100%;
+}
+
+#details {
+    padding: 30px;
+
+}
+
+#placeholder {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-inline: 20px;
+    background-color: rgb(172, 224, 30);
+    height: 100px;
+    width: 200px;
+    overflow: visible;
+    text-align: center;
+    padding-top: 10%;
+
+    color: rgb(128, 0, 0);
+    font-size: 40px;
+
+}
+
+#detailsV {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+#detailsV>li {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#detailsV div {
+    background-color: white;
+    border-style: solid;
+    border-width: 0.5px;
+    padding-left: 3px;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.list-area {
+    grid-row: 3;
+}
+
+.list-area {
+
+    display: flex;
+    background-color: rgb(141, 49, 157);
+
+}
+
+nav {
+    grid-row: 4;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    padding-block: 10px;
+    padding-inline: 20px;
+    gap: 5px;
+
+
+}
+
+.navadd {
+    height: 50px;
+    width: auto;
+    grid-column: 1;
+    border-radius: 10px;
+    padding: 8px;
+    margin-block: 10px;
+    background-color: white;
+    align-content: center;
+}
+
+.navedit {
+    height: 50px;
+    width: auto;
+    grid-column: 1;
+    border-radius: 10px;
+    padding: 8px;
+    margin-block: 10px;
+    background-color: white;
+    align-content: center;
+}
+
+.navfilter {
+    height: 50px;
+    grid-column: 2;
+    padding: 8px;
+    border-radius: 10px;
+    margin-block: 10px;
+}
+
+.navdelete {
+    height: 50px;
+    grid-column: 3;
+    border-radius: 10px;
+    padding: 8px;
+    margin-block: 10px;
+}
+
+#list-container {
+    grid-row: 4;
+    color: burlywood;
+
+    background-color: rgb(61, 15, 15);
+}
+
+.selected {
+    background-color: coral;
+}

@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: barlow;
+}
+
+
+:root {
+    --color-purple-100: hsl(263, 55%, 52%);
+    --color-gray-blue: hsl(217, 19%, 35%);
+    --color-black-blue: hsl(219, 29%, 14%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-LightGray: hsl(0, 0%, 81%);
+    --color-LightGrayishBlue: hsl(210, 46%, 95%);
+}
+
+@font-face {
+    font-family: barlow;
+    src: url(Barlow_Semi_Condensed/BarlowSemiCondensed-Regular.ttf);
+}
+
+body {
+    background-color: var(--color-LightGray);
+}
+
+.grider {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 3;
+    gap: 20px;
+
+
+
+}
+
+.cards>div>div {
+    padding-inline: 40px;
+    padding-block: 30px;
+    border-radius: 10px;
+    min-width: 260px;
+}
+
+.card-one {
+    background-color: hsl(263, 55%, 52%);
+
+
+}
+
+.card-one .name {
+
+    color: var(--color-white);
+}
+
+.card-one .status {
+    color: var(--color-LightGray);
+    font-size: 14px;
+}
+
+.card-one .heading {
+    font-weight: 900;
+    font-size: 20px;
+    color: var(--color-white);
+}
+
+.card-one p {
+    color: var(--color-LightGray);
+    margin-block: 10px;
+    font-size: 13;
+}
+
+
+.card-two {
+    background-color: var(--color-gray-blue)
+}
+
+.card-three {
+    background-color: var(--color-white);
+}
+
+.card-four {
+    background-color: var(--color-black-blue);
+}
+
+.card-five {
+    background-color: var(--color-white);
+}
