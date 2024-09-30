@@ -1,8 +1,10 @@
 import {
     toggleaddMenuDisplay,
     toggleFilterMenuDisplay,
+    toggleEditMenuDisplay,
     renderEmployeeList,
     renderView,
+    fillEditForm,
 } from "./view.js";
 import {
     addEmployee,
@@ -10,7 +12,8 @@ import {
     selectItem,
     deleteEmployee,
     filteredEmployees,
-    editItem,
+    editEmployee,
+    // editItem,
 } from "./model.js";
 
 renderEmployeeList();
@@ -23,10 +26,13 @@ addmenu.addEventListener("click", function () {
     toggleaddMenuDisplay();
 });
 
-// Edit button functionality
+//Edit button functionality
 const editmenu = document.getElementById("editPanelButton");
-addmenu.addEventListener("click", function () {
+editmenu.addEventListener("click", function () {
     toggleEditMenuDisplay();
+    fillEditForm();
+    console.log(theChosenEmp);
+    
 });
 
 const filterOption = document.getElementById("filter");
@@ -96,6 +102,8 @@ theList.addEventListener("click", function (ev) {
     selectItem(ev.target);
     renderView();
     console.log(theChosenEmp.department);
+    console.log(theChosenEmp);
+    
 });
 //Delete button functionality
 
@@ -117,14 +125,16 @@ depfilterButton.addEventListener("click", function () {
 });
 
 
-// const viewList = document.getElementById("detailsV");
-
-// viewList.addEventListener("click", function (ev) {
-//     editItem(ev.target)
-    
-    
-    
-
-
-// });
-
+const editItemSubmitButton = document.getElementById("submitEmpEditButton");
+editItemSubmitButton.addEventListener("submit", function (e) {
+    if (!editItemSubmitButton.checkValidity()) {
+    // Form is invalid, do something
+  } else {
+    // Form is valid, prevent default and submit manually
+    e.preventDefault();
+    // Your form submission logic here
+  }
+    editEmployee();
+    renderEmployeeList();
+    renderView();
+})

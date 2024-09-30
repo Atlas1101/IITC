@@ -30,22 +30,32 @@ function addEmployee(firstName, lastName, age, department, startDate, salary) {
 
 
 function editEmployee(firstName, lastName, age, department, startDate, salary) {
-    const Employee = {
-        id: makeId(),
-        firstName: firstName,
-        lastName: lastName,
-        age: age,
-        startDate: startDate,
-        department: department,
-        salary: salary,
+    const employeeToEdit = theChosenEmp
+    
+    console.log(employeeToEdit);
+    
+    const currentEmployee = {
+    id: theChosenEmp.id,
+    firstName: document.getElementById('fnameE').value,
+    lastName: document.getElementById('lnameE').value,
+    age: document.getElementById('ageE').value,
+    department: document.getElementById('departmentE').value,
+    startDate: document.getElementById('start-dateE').value,
+    salary: document.getElementById('salaryE').value,
     };
 
-    _gemployeeData.push(Employee);
+    const replacement = _gemployeeData.findIndex((emp) => emp.id === currentEmployee.id);
+    if (replacement !== -1) {
+    _gemployeeData[replacement] = currentEmployee;
+  }
+
+    
     console.log(_gemployeeData);
     console.log(EMPLOYEE_STORAGE_KEY);
 
     saveToStorage(EMPLOYEE_STORAGE_KEY, _gemployeeData);
 }
+
 
 let theChosenEmp = null;
 
@@ -137,17 +147,13 @@ function filteredEmployees() {
 }
 
 
-function editItem(targetData) {
-  let item = Object.entries(theChosenEmp).find(([key])  => key === targetData.id)
+// function editItem(targetData) {
+//   let item = Object.entries(theChosenEmp).find(([key])  => key === targetData.id)
 
-    let newData = prompt("enter new data")
-
-    theChosenEmp[item[0]] = 
+    
 
 
-        const input = document.createElement('input');
-            input.type = 'text';
-            input.value = currentText;
+        
     // console.log([item[0]]);
     
 
@@ -160,7 +166,7 @@ function editItem(targetData) {
 
     
   
-}
+// }
 
 
 
@@ -173,5 +179,6 @@ export {
     filteredEmployees,
     isFilterMode,
     arraytoRender,
-    editItem,
+    editEmployee,
+    
 };

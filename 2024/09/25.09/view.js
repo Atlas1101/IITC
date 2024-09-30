@@ -20,6 +20,24 @@ function toggleFilterMenuDisplay() {
     console.log(document.getElementById("dropContentFilter").classList);
 }
 
+function toggleEditMenuDisplay() {
+    if(theChosenEmp === null){
+        alert("Please select an employee to edit")
+        return
+    }
+    document.getElementById("dropContentEdit").classList.toggle("show");
+}
+function fillEditForm() {
+  const currentEmployee = theChosenEmp
+  if(currentEmployee === null) return
+  document.getElementById('fnameE').value = currentEmployee.firstName;
+  document.getElementById('lnameE').value = currentEmployee.lastName;
+  document.getElementById('ageE').value = currentEmployee.age;
+  document.getElementById('departmentE').value = currentEmployee.department;
+  document.getElementById('start-dateE').value = currentEmployee.startDate;
+  document.getElementById('salaryE').value = currentEmployee.salary;
+}
+
 
 
 function renderEmployeeList() {
@@ -84,6 +102,8 @@ function renderView() {
 export {
     toggleaddMenuDisplay,
     toggleFilterMenuDisplay,
+    toggleEditMenuDisplay,
     renderEmployeeList,
     renderView,
+    fillEditForm,
 };

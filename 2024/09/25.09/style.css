@@ -24,14 +24,14 @@ ul {
 
 .base {
     display: grid;
-    grid-template-rows: 40px 3fr 1fr 3fr;
+    grid-template-rows: 40px 1fr 1fr 1fr;
     grid-template-columns: 1fr;
 }
 
 .top-bar {
     grid-row: 1;
     /* grid-column: 1 / span 2; */
-    background-color: aqua;
+    background-color: white;
     text-align: center;
 }
 
@@ -149,13 +149,13 @@ ul {
     background-color: white;
     display: grid;
     grid-template-columns: 1;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-top: 3px;
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
 }
 
-#picture {
-    background-color: rgb(82, 17, 188);
-    height: 100%;
-}
 
 #details {
     padding: 30px;
@@ -207,7 +207,7 @@ ul {
 .list-area {
 
     display: flex;
-    background-color: rgb(141, 49, 157);
+    background-color: rgb(40, 24, 43);
 
 }
 
@@ -265,7 +265,7 @@ nav {
     grid-row: 4;
     color: burlywood;
 
-    background-color: rgb(61, 15, 15);
+    background-color: rgb(25, 34, 45);
 }
 
 .selected {
