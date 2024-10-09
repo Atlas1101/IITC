@@ -62,7 +62,7 @@ submitButton.addEventListener("click", function (ev) {
         const input = document.getElementById(data);
         if (!input.value) {
             isEmptyField = true;
-console.log(`Empty field: ${data}, value: "${input.value}"`);
+             console.log(`Field: ${data}, value: "${input.value}", type: ${input.type}`);
             
         }
         values[data] = input.value;
