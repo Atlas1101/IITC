@@ -147,28 +147,6 @@ function filteredEmployees() {
 }
 
 
-// function editItem(targetData) {
-//   let item = Object.entries(theChosenEmp).find(([key])  => key === targetData.id)
-
-    
-
-
-        
-    // console.log([item[0]]);
-    
-
-    // console.log(theChosenEmp);
-    
-
-    // const currentSelectedData = detailsV.querySelector(".selected");
-
-
-
-    
-  
-// }
-
-
 
 export {
     _gemployeeData,
