@@ -62,12 +62,14 @@ submitButton.addEventListener("click", function (ev) {
         const input = document.getElementById(data);
         if (!input.value) {
             isEmptyField = true;
+console.log(`Empty field: ${data}, value: "${input.value}"`);
+            
         }
         values[data] = input.value;
-        input.value = "";
+        
     });
     if (isEmptyField) {
-        $('#error-message').text('Please fill all fields');
+alert("Please Fill All fields");
         return;
     }
     addEmployee(
@@ -79,22 +81,11 @@ submitButton.addEventListener("click", function (ev) {
         values["salary"]
     );
 
-    // const firstName = document.getElementById("fname")
-    // const lastName = document.getElementById("lname")
-    // const age = document.getElementById("age")
-    // const department = document.getElementById("department")
-    // const startDate = document.getElementById("start-date")
-    // const salary = document.getElementById("salary")
-    // modelexp.addEmployee(
-    //     firstName.value,
-    //     lastName.value,
-    //     age.value,
-    //     department.value,
-    //     startDate.value,
-    //     salary.value,
-    // )
 
     renderEmployeeList();
+      inputData.forEach((data) => {
+        document.getElementById(data).value = "";
+    });
 });
 
 const theList = document.getElementById("employee-list");
