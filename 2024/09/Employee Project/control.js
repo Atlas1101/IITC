@@ -32,14 +32,14 @@ editmenu.addEventListener("click", function () {
     toggleEditMenuDisplay();
     fillEditForm();
     console.log(theChosenEmp);
-    
+
 });
 
 const filterOption = document.getElementById("filter");
 filterOption.addEventListener("click", function () {
     toggleFilterMenuDisplay();
     console.log("filte button pressed");
-    
+
 });
 // submit form function
 const submitButton = document.getElementById("submitEmpButton");
@@ -67,7 +67,7 @@ submitButton.addEventListener("click", function (ev) {
         input.value = "";
     });
     if (isEmptyField) {
-        alert("Please Fill All fields");
+        $('#error-message').text('Please fill all fields');
         return;
     }
     addEmployee(
@@ -103,7 +103,7 @@ theList.addEventListener("click", function (ev) {
     renderView();
     console.log(theChosenEmp.department);
     console.log(theChosenEmp);
-    
+
 });
 //Delete button functionality
 
@@ -121,19 +121,19 @@ depfilterButton.addEventListener("click", function () {
     filteredEmployees();
     renderEmployeeList();
     // console.log("filtered and rendered");
-    
+
 });
 
 
 const editItemSubmitButton = document.getElementById("submitEmpEditButton");
 editItemSubmitButton.addEventListener("submit", function (e) {
     if (!editItemSubmitButton.checkValidity()) {
-    // Form is invalid, do something
-  } else {
-    // Form is valid, prevent default and submit manually
-    e.preventDefault();
-    // Your form submission logic here
-  }
+        // Form is invalid, do something
+    } else {
+        // Form is valid, prevent default and submit manually
+        e.preventDefault();
+        // Your form submission logic here
+    }
     editEmployee();
     renderEmployeeList();
     renderView();
