@@ -9,16 +9,19 @@
 </head>
 
 <body>
-    <h1>My ATM Project</h1>
-    <!-- <p>#ביבי_המלך</p> <p>לא באמת</p> -->
-    <form>
-        <label for="PIN">Enter your PIN</label>
-        <input name="PIN" id="PIN" maxlength="4">
-        <button>Submit</button>
-    </form>
+    <div id="welcome">
 
-    <p id="validation"></p>
+        <h1>My ATM Project</h1>
+        <!-- <p>#ביבי_המלך</p> <p>לא באמת</p> -->
+        <form>
+            <label for="PIN">Enter your PIN</label>
+            <input name="PIN" id="PIN" maxlength="4">
+            <button>Submit</button>
+        </form>
 
+        <p id="validation"></p>
+
+    </div>
 
     <div id="interface">
 
@@ -44,8 +47,9 @@
                     Withdraw
                 </h1>
                 <form action="">
-                    <input placeholder="How much do you need?">
-                    <button type="submit">Withdraw</button>
+                    <input name="withAmount" id="withInput" placeholder="How much do you need?">
+                    <button id="submitWithButton" type="submit">Withdraw</button>
+                    <p id="withMssgP"></p>
                 </form>
             </div>
             <div id="depositEl" class="hidden">
@@ -53,8 +57,9 @@
                     Deposit
                 </h1>
                 <form action="">
-                    <input placeholder="How much do we get?">
-                    <button type="submit">Deposite</button>
+                    <input name="depositAmount" id="depoInput" placeholder="How much do we get?">
+                    <button id="submitDepButton" type="submit">Deposite</button>
+                    <p id="depoMssg"></p>
                 </form>
             </div>
             <div id="balanceEl" class="hidden">
@@ -67,6 +72,7 @@
                 <h1>
                     Last Transaction
                 </h1>
+                <p id="lastTransactionP"></p>
             </div>
         </div>
 
