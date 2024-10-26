@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie-Page</title>
+    <link rel="stylesheet" href="style-movie.css">
+
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <button class="menu"> &#9776; </button>
+            <div id="mySidenav-movie" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn">&times;</a>
+                <a href="/2024/10/imdb-clone/home/index.html">Home</a>
+                <a href="#">Favourites</a>
+                <a href="../about/about.html">About</a>
+
+            </div>
+            <div class="logo">
+                logo
+            </div>
+            <form class="search">
+                <input type="text" name="search" class="search-input" placeholder="Search Here" required>
+                <button type="submit" class="search-btn">Search</button>
+            </form>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="movie-page">
+            <section class="movie-card">
+
+                <div class="movie-img-container">
+                    <img class="movie-img" src="" alt="">
+                </div>
+
+                <div class="movie-info">
+
+
+
+                    <h1 class="movie-title"></h1>
+
+                    <section class="like-dislike">
+
+                        <div class="favourite-icon">&#x2764;&#xfe0f; Add to Favourites</div>
+
+                        <div class="unfavourite-icon hidden">&#x2764;&#xfe0e; Remove from Favourites</div>
+
+                    </section>
+
+                    <p class="movie-date-container">Release Date: <span class="movie-date"></span></p>
+
+                    <p class="movie-budget-container"> Budget: <span class="movie-budget"></span></p>
+
+                    <p class="movie-description"></p>
+
+                    <p class="movie-genre-container">Genres: <span class="movie-genre"></span></p>
+                </div>
+            </section>
+
+
+        </section>
+
+        <section class="similar-movies">
+
+            <h1 class="similar-movies-header">Similar Movies</h1>
+            <section class="carousel-wrapper-similar">
+                <ul class="slides-container-similar" id="similar-movie-container">
+                </ul>
+            </section>
+
+        </section>
+
+    </main>
+
+    <script type="module" src="view-movie.js"></script>
+</body>
+
+</html>

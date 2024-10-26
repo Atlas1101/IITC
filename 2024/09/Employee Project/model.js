@@ -9,6 +9,7 @@ if (!_gemployeeData || _gemployeeData.length === 0) {
     _gemployeeData = employeeData;
     saveToStorage(EMPLOYEE_STORAGE_KEY, _gemployeeData);
 }
+console.log("wowowowowo");
 
 function addEmployee(firstName, lastName, age, department, startDate, salary) {
     const Employee = {

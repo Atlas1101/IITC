@@ -1,0 +1,245 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    border: 0;
+}
+
+
+
+
+body {
+    background: linear-gradient(180deg, #000000, #1d1f30);
+    font-family: 'Inter', sans-serif;
+}
+
+.menu {
+    background-color: transparent;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 20px;
+    padding-inline: 7px;
+    transition: all 0.3s ease-in-out;
+    border: thin solid white;
+    margin-left: 5px;
+    margin-right: auto;
+
+
+}
+
+.menu:hover {
+    color: inherit;
+    background-color: white;
+
+}
+
+.search {
+    background-color: transparent;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 20px;
+    padding-inline: 8px;
+    transition: all 0.3s ease-in-out;
+    border: thin solid white;
+
+    margin-left: 12px;
+    margin-right: auto;
+}
+
+.search:hover {
+    border: thin solid rgb(252, 137, 15);
+}
+
+.search-input {
+    border: none;
+    background-color: tomato;
+}
+
+.search :first-child {
+    background-color: transparent;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+    padding-inline: 7px;
+    transition: all 0.3s ease-in-out;
+    margin-left: 5px;
+    margin-right: auto;
+    border: none;
+}
+
+.search :last-child {
+    color: inherit;
+    background-color: transparent;
+    border-left: #fff 1px solid;
+    padding-left: 3px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+h1 {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+nav {
+    background: linear-gradient(180deg, #000000, #1d1f30);
+    display: flex;
+    padding-block: 5px;
+    justify-content: space-around;
+    padding-block: 20px;
+    padding-inline: 20px;
+
+}
+
+.carousel-wrapper {
+    width: 100%;
+    height: 400px;
+    white-space: nowrap;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slides-container {
+    background-color: black;
+    display: flex;
+    white-space: nowrap;
+    width: 100%;
+    height: 100%;
+    padding-block: 10px;
+    gap: 10px;
+    padding-inline: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-color: rgba(254, 254, 254, 0.4) transparent;
+    scrollbar-width: thin;
+}
+
+.pop-movie-card {
+    position: relative;
+    min-height: fit-content;
+    min-width: fit-content;
+    max-width: 300px;
+    max-height: fit-content;
+    aspect-ratio: 2 / 3;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 15px;
+    overflow: hidden;
+    justify-content: space-evenly;
+
+}
+
+.pop-movie-img-container {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.pop-movie-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.pop-movie-title {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    top: 80%;
+    background: rgb(0, 0, 0);
+    color: #fff;
+    padding-inline: 20px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    white-space: normal;
+}
+
+.pop-movie-desc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 20%;
+    width: 100%;
+    padding-inline: 30px;
+    padding-top: 30px;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    font-size: 17px;
+    white-space: normal;
+    text-align: center;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    overflow-y: scroll;
+}
+
+.pop-movie-card:hover .pop-movie-desc {
+    opacity: 1;
+}
+
+.pop-movie-card:hover .pop-movie-title {
+    opacity: 1;
+}
