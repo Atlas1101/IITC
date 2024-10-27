@@ -1,35 +1,42 @@
-import {fetchPopMovies,} from "./api-favourites.js";
+import { favIdArray } from "../movie/model-movie.js";
+import { favMovieArrayCreator,favMovieArray } from "./api-favourites.js";
 
 
 
-//pop movie 
-console.log(fetchPopMovies.data);
-console.log("wefwef");
 
 
-async function processedPopMovies() {
+
+async function processedFavMovies() {
     try{
-        const data = await fetchPopMovies()
+        await favMovieArrayCreator()
+        const data = favMovieArray
+        console.log(data);
+        
 
-        const popMovies = data.results.map( popMovies => ({
-            title: popMovies.title,
-            description:popMovies.overview,
-            image:popMovies.poster_path,
-            id:popMovies.id
+        const FavMovies = data.map( FavMovies => ({
+            title: FavMovies.title,
+            description:FavMovies.overview,
+            image:FavMovies.poster_path,
+            id:FavMovies.id
 
         }))
-        return popMovies
+        console.log(FavMovies);
+        console.log(data);
+        
+        return FavMovies
+        
 
     }
     catch(error){
-        console.error('Error processing popular movies data:', error);
+        console.error('Error processing fav movies data:', error);
         throw error;
 
     }
 }
 
+
 export {
-    processedPopMovies
+    processedFavMovies
 };
 
 

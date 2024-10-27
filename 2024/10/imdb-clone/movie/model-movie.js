@@ -61,15 +61,43 @@ async function processedSimilarMovies() {
 }
 
 
+let favIdArray = JSON.parse(localStorage.getItem('theFavIdArray')) || [];
+
+
 function addToFav(){
+    let newFavId = {
+        id:getSelectedMovieId(),
+    }
     
+        favIdArray.push(newFavId)
+        localStorage.setItem('theFavIdArray',JSON.stringify(favIdArray))
+
+    
+}
+
+
+function removeFromFav(){
+    let unFavId = {
+        id:getSelectedMovieId(),
+    }
+    favIdArray=favIdArray.filter(film => film.id !== unFavId.id)
+    localStorage.setItem('theFavIdArray',JSON.stringify(favIdArray))
+}
+
+function isFav(){
+     if(favIdArray.some(film => film.id === getSelectedMovieId())){
+
+         return true
+     }
+    else
+    return false
 }
 
 
 
 
 export {
-    processedMovie,getSelectedMovieId,processedSimilarMovies
+    processedMovie,getSelectedMovieId,processedSimilarMovies,addToFav,removeFromFav,isFav,favIdArray
 };
 
 

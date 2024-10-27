@@ -176,24 +176,29 @@ nav {
     display: flex;
     font-size: 25px;
     border-radius: 20px;
+    padding: 8px;
 }
 
 
 .favourite-icon:hover {
 
-    border: thin solid rgb(255, 40, 234);
+    border: thin solid rgb(0, 255, 94);
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+
 }
 
 .unfavourite-icon {
-    font-size: 40px;
+    display: flex;
+    font-size: 25px;
+    border-radius: 20px;
+    padding: 8px;
 }
 
-.unfavourite-icon {
-    font-size: 40px;
-    color: rgb(242, 41, 23);
+.unfavourite-icon:hover {
+    border: thin solid rgb(192, 37, 37);
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .movie-info {
@@ -247,6 +252,7 @@ nav {
     white-space: nowrap;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-bottom: 30px;
 }
 
 .slides-container-similar {

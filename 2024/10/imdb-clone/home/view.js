@@ -1,5 +1,6 @@
 import {processedPopMovies,} from "./model.js";
 import {openMoviePage} from "./control.js";
+import { noticeMe } from "../favourites/view-favourites.js";
 
 let isPageActive = true;
 

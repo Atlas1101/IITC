@@ -165,7 +165,7 @@ nav {
     scrollbar-width: thin;
 }
 
-.pop-movie-card {
+.fav-movie-card {
     position: relative;
     min-height: fit-content;
     min-width: fit-content;
@@ -181,7 +181,7 @@ nav {
 
 }
 
-.pop-movie-img-container {
+.fav-movie-img-container {
 
     position: absolute;
     top: 0;
@@ -191,14 +191,14 @@ nav {
     overflow: hidden;
 }
 
-.pop-movie-img-container img {
+.fav-movie-img-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
 
-.pop-movie-title {
+.fav-movie-title {
     position: absolute;
     bottom: 0px;
     left: 0;
@@ -216,7 +216,7 @@ nav {
     white-space: normal;
 }
 
-.pop-movie-desc {
+.fav-movie-desc {
     position: absolute;
     top: 0;
     left: 0;
@@ -236,10 +236,10 @@ nav {
     overflow-y: scroll;
 }
 
-.pop-movie-card:hover .pop-movie-desc {
+.fav-movie-card:hover .fav-movie-desc {
     opacity: 1;
 }
 
-.pop-movie-card:hover .pop-movie-title {
+.fav-movie-card:hover .fav-movie-title {
     opacity: 1;
 }

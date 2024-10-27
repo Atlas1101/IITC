@@ -1,5 +1,6 @@
 import {processedMovie,processedSimilarMovies} from "./model-movie.js";
 import {openMoviePage,likeBtn,dislikeBtn} from "./control-movie.js";
+import { isFav } from "./model-movie.js";
 
 const elMovieCard = document.querySelector(".movie-card");
 
@@ -32,7 +33,13 @@ async function renderMovie() {
             newMovieImg.src = `https://image.tmdb.org/t/p/w300${film.image}`
             elImageContainer.appendChild(newMovieImg)
 
-        
+        if(isFav()) {
+            likeBtn.classList.add("hidden");
+            dislikeBtn.classList.remove("hidden");
+        }else if(!isFav()) {
+            likeBtn.classList.remove("hidden");
+            dislikeBtn.classList.add("hidden");
+        }
 
 
     
@@ -149,9 +156,17 @@ renderSimilarMovieCarousel()
 
 
 
-function toggleLikeDislike() {
-    
+function favSelected() {
+    likeBtn.classList.add("hidden");
+    dislikeBtn.classList.remove("hidden");
 
 
 } 
 
+function unfavSelected() {  
+    likeBtn.classList.remove("hidden");
+    dislikeBtn.classList.add("hidden");
+
+}
+
+export {favSelected,unfavSelected}

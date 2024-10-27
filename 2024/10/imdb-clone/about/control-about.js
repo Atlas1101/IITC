@@ -1,9 +1,9 @@
     function openMoviePage() {
     window.location.href = '/2024/10/imdb-clone/movie/movie.html';
-
     }
     export {openMoviePage}
 
+    
 
     function openNav() {
   document.getElementById("mySidenav").style.width = "250px";

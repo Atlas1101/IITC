@@ -1,3 +1,6 @@
+import { addToFav, removeFromFav } from "./model-movie.js";
+import { favSelected, unfavSelected } from "../movie/view-movie.js";
+
 function openMoviePage() {
     window.location.href = "/2024/10/imdb-clone/movie/movie.html";
 }
@@ -45,6 +48,8 @@ const likeBtn = document.querySelector(".favourite-icon");
 
 likeBtn.addEventListener("click", () => {
     console.log("I like");
+    favSelected();
+    addToFav();
     
 });
 
@@ -53,6 +58,8 @@ const dislikeBtn = document.querySelector(".unfavourite-icon");
 
 dislikeBtn.addEventListener("click", () => {
     console.log("I dont like");
+    unfavSelected();
+    removeFromFav();
     
 });
 
