@@ -85,10 +85,10 @@ function removeFromFav(){
 }
 
 function isFav(){
-     if(favIdArray.some(film => film.id === getSelectedMovieId())){
+    if(favIdArray.some(film => film.id === getSelectedMovieId())){
 
-         return true
-     }
+        return true
+    }
     else
     return false
 }

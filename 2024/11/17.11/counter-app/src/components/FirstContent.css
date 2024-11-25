@@ -1,0 +1,28 @@
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-family: "Overpass",
+        sans-serif;
+    font-weight: 700;
+    font-size: 23px
+}
+
+p {
+    font-family: "Overpass", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(217, 12%, 63%);
+    line-height: 1.4rem;
+    margin-top: 20px;
+    letter-spacing: 0.2px;
+}
+
+.first-content {
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 30px;
+    padding: 2rem 1.5rem;
+    max-width: 400px;
+    background-image:
+        linear-gradient(to bottom,
+            hsl(212, 18%, 14%),
+            hsl(220, 16%, 11%));
+}

@@ -1,0 +1,89 @@
+.card {
+    background-color: rgb(133, 133, 133);
+    color: black;
+    border: solid 1px black;
+    border-radius: 25px;
+    list-style-type: none;
+    ;
+}
+
+.card-bottom {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: inherit;
+    padding-bottom: 20px;
+}
+
+.logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.bug,
+.bug-poison,
+.bug-flying {
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d1fa0f80-33c1-4516-8baa-90fb67ed2269/dfsf928-d7da195e-d073-4ea7-888a-580ffb04f5b6.png/v1/fill/w_1024,h_576,q_80,strp/bug_type_pokemon_go_wallpaper___qhd___by_elbarnzo_dfsf928-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc2IiwicGF0aCI6IlwvZlwvZDFmYTBmODAtMzNjMS00NTE2LThiYWEtOTBmYjY3ZWQyMjY5XC9kZnNmOTI4LWQ3ZGExOTVlLWQwNzMtNGVhNy04ODhhLTU4MGZmYjA0ZjViNi5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.fBiRYJtwV0NiYDuRcgFn3Sjis6x-Qldh4F7Fj3calG4);
+    background-size: cover;
+    background-position: center;
+}
+
+.normal-flying {
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d1fa0f80-33c1-4516-8baa-90fb67ed2269/dfr8yz4-b7304504-a24d-4ed9-8094-38848c7acdf9.png/v1/fill/w_1024,h_576,q_80,strp/flying_type_pokemon_go_wallpaper___qhd___by_elbarnzo_dfr8yz4-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc2IiwicGF0aCI6IlwvZlwvZDFmYTBmODAtMzNjMS00NTE2LThiYWEtOTBmYjY3ZWQyMjY5XC9kZnI4eXo0LWI3MzA0NTA0LWEyNGQtNGVkOS04MDk0LTM4ODQ4YzdhY2RmOS5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.OWrvMu9qeRYl1-heoGRiX9E_O0xrmzQ2F5KQCATOF-o);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.fire,
+.fire-flying {
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d1fa0f80-33c1-4516-8baa-90fb67ed2269/d7519pz-cab4cca0-3856-4a70-87d1-d5d809d9c0e4.png/v1/fit/w_828,h_466,q_70,strp/fire_pokemon_energy_wallpaper_by_elbarnzo_d7519pz-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc2IiwicGF0aCI6IlwvZlwvZDFmYTBmODAtMzNjMS00NTE2LThiYWEtOTBmYjY3ZWQyMjY5XC9kNzUxOXB6LWNhYjRjY2EwLTM4NTYtNGE3MC04N2QxLWQ1ZDgwOWQ5YzBlNC5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.1wpXy6FOa9BuS5AvxG7mGhtiW4JklHRo1pBwq3rgBWs);
+    background-position: center;
+    background-size: cover;
+}
+
+.grass-poison {
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d1fa0f80-33c1-4516-8baa-90fb67ed2269/dfqwup7-21d9ed49-e430-4394-af56-f950b622dfe1.png/v1/fit/w_828,h_466,q_70,strp/grass_type_pokemon_go_wallpaper___qhd___by_elbarnzo_dfqwup7-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc2IiwicGF0aCI6IlwvZlwvZDFmYTBmODAtMzNjMS00NTE2LThiYWEtOTBmYjY3ZWQyMjY5XC9kZnF3dXA3LTIxZDllZDQ5LWU0MzAtNDM5NC1hZjU2LWY5NTBiNjIyZGZlMS5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.TORgqsjJ2d10XzeFt7asq_W-KMLM85TtSj0o9d4PHVc);
+    background-position: center;
+    background-size: cover;
+}
+
+.water {
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d1fa0f80-33c1-4516-8baa-90fb67ed2269/dfq8w8w-f02e514c-3e89-434c-92e1-9ad69b4af771.png/v1/fit/w_828,h_466,q_70,strp/water_type_pokemon_go_wallpaper___qhd___by_elbarnzo_dfq8w8w-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc2IiwicGF0aCI6IlwvZlwvZDFmYTBmODAtMzNjMS00NTE2LThiYWEtOTBmYjY3ZWQyMjY5XC9kZnE4dzh3LWYwMmU1MTRjLTNlODktNDM0Yy05MmUxLTlhZDY5YjRhZjc3MS5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.SpPBhdOZy_7kxR5iAXY6cg-Hqvfr1Pv8HbMya9tMHqA);
+    background-position: center;
+    background-size: cover;
+}
+
+.normal {
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d1fa0f80-33c1-4516-8baa-90fb67ed2269/dfqn3ht-2eed93b9-fb84-4d0a-8c61-877daf3478ea.png/v1/fill/w_1024,h_576,q_80,strp/normal_type_pokemon_go_wallpaper___qhd___by_elbarnzo_dfqn3ht-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc2IiwicGF0aCI6IlwvZlwvZDFmYTBmODAtMzNjMS00NTE2LThiYWEtOTBmYjY3ZWQyMjY5XC9kZnFuM2h0LTJlZWQ5M2I5LWZiODQtNGQwYS04YzYxLTg3N2RhZjM0NzhlYS5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.IpICVcyI9XbuVE6cJEcL27Pim5Sdqax1CvyBvfJfloU);
+    background-position: center;
+    background-size: cover;
+}
+
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+    }
+}
+
+

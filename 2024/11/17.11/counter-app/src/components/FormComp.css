@@ -1,0 +1,32 @@
+.btn-container {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+.btn {
+    background-color: #262c38;
+    border: none;
+    border-radius: 50%;
+    padding-top: 0.2rem;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    transition: 0.3s;
+    font-size: 15px;
+    height: 3rem;
+    width: 3rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-inline-end: 15px;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+.btn:focus {
+    background-color: hsl(25, 97%, 53%);
+}

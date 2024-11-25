@@ -1,0 +1,6 @@
+.pokemon-card-container {
+    color: aqua;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    list-style-type: none;
+}

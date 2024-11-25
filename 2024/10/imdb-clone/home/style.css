@@ -6,12 +6,9 @@
     border: 0;
 }
 
-
-
-
 body {
     background: linear-gradient(180deg, #000000, #1d1f30);
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 .menu {
@@ -25,14 +22,11 @@ body {
     border: thin solid white;
     margin-left: 5px;
     margin-right: auto;
-
-
 }
 
 .menu:hover {
     color: inherit;
     background-color: white;
-
 }
 
 .search {
@@ -121,7 +115,6 @@ body {
     }
 }
 
-
 h1 {
     color: white;
     text-align: center;
@@ -139,7 +132,6 @@ nav {
     justify-content: space-around;
     padding-block: 20px;
     padding-inline: 20px;
-
 }
 
 .carousel-wrapper {
@@ -178,11 +170,9 @@ nav {
     border-radius: 15px;
     overflow: hidden;
     justify-content: space-evenly;
-
 }
 
 .pop-movie-img-container {
-
     position: absolute;
     top: 0;
     left: 0;

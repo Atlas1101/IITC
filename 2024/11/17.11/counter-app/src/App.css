@@ -1,0 +1,36 @@
+:root {
+  --overpass-font-family: "Overpass", sans-serif;
+  --overpass-font-weight-400: 400;
+  --overpass-font-weight-700: 700;
+}
+
+/*font face*/
+/* @font-face {
+  font—family: FontName;
+  src: url():
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  background-color: hsl(216, 12%, 8%);
+  padding: 1rem;
+  margin: 1.5rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Overpass",
+    sans-serif;
+}
+
+
+.counter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

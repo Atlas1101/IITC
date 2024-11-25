@@ -7,39 +7,109 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
 
   <title>Frontend Mentor | FAQ accordion</title>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+  </style>
 
 
 
 </head>
 
 <body>
+  <div class="background">
 
-  FAQs
 
-  What is Frontend Mentor, and how will it help me?
+    <!-- <img src="./assets/images/background-pattern-mobile.svg" alt="">
+    <img class="hidden" src="./assets/images/background-pattern-desktop.svg" alt=""> -->
 
-  Frontend Mentor offers realistic coding challenges to help developers improve their
-  frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
-  all levels and ideal for portfolio building.
 
-  Is Frontend Mentor free?
+    <main>
 
-  Yes, Frontend Mentor offers both free and premium coding challenges, with the free
-  option providing access to a range of projects suitable for all skill levels.
 
-  Can I use Frontend Mentor projects in my portfolio?
 
-  Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
-  way to showcase your skills to potential employers!
+      <Header>
+        <div class="img-container">
+          <img src="./assets/images/icon-star.svg" alt="icon-star">
+        </div>
 
-  How can I get help if I'm stuck on a Frontend Mentor challenge?
+        <h1>
+          FAQs
+        </h1>
 
-  The best place to get help is inside Frontend Mentor's Discord community. There's a help
-  channel where you can ask questions and seek support from other community members.
+      </Header>
 
-  <button>rtgrthyt5</button>
+      <section class="questions">
+
+        <button class="question-btn">
+
+          What is Frontend Mentor, and how will it help me?
+
+          <div class="icon-container"><img src="./assets/images/icon-plus.svg" alt="">
+            <img src="./assets/images/icon-minus.svg" alt="">
+          </div>
+        </button>
+
+        <div class="answer hidden">
+          Frontend Mentor offers realistic coding challenges to help developers improve their
+          frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
+          all levels and ideal for portfolio building.
+
+        </div>
+
+        <hr>
+        <button class="question-btn">
+
+          Is Frontend Mentor free?
+          <div class="icon-container"><img src="./assets/images/icon-plus.svg" alt="">
+            <img src="./assets/images/icon-minus.svg" alt="">
+          </div>
+        </button>
+        <div class="answer hidden">
+          Yes, Frontend Mentor offers both free and premium coding challenges, with the free
+          option providing access to a range of projects suitable for all skill levels.
+
+        </div>
+        <hr>
+        <button class="question-btn">
+
+          Can I use Frontend Mentor projects in my portfolio?
+          <div class="icon-container"><img src="./assets/images/icon-plus.svg" alt="">
+            <img src="./assets/images/icon-minus.svg" alt="">
+          </div>
+        </button>
+        <div class="answer hidden">
+          Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+          way to showcase your skills to potential employers!
+
+        </div>
+
+        <hr>
+
+        <button class="question-btn">
+
+          How can I get help if I'm stuck on a Frontend Mentor challenge?
+          <div class="icon-container"><img src="./assets/images/icon-plus.svg" alt="">
+            <img src="./assets/images/icon-minus.svg" alt="">
+          </div>
+
+        </button>
+        <div class="answer hidden">
+
+
+          The best place to get help is inside Frontend Mentor's Discord community. There's a help
+          channel where you can ask questions and seek support from other community members.
+
+        </div>
+
+      </section>
+    </main>
+  </div>
+
+  <script src="main.js"></script>
 
 </body>
 

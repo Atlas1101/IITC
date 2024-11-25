@@ -1,0 +1,97 @@
+/* Mobile: 375px
+- Desktop: 1440px
+
+> 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
+
+## Colors
+
+- White: hsl(0, 0%, 100%)
+- Light pink: hsl(275, 100%, 97%)
+- Grayish purple: hsl(292, 16%, 49%)
+- Dark purple: hsl(292, 42%, 14%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraphs): 16px
+
+### Font
+
+- Family: [Work Sans](https://fonts.google.com/specimen/Work+Sans)
+- Weights: 400, 600, 700 */
+:root {
+    --overpass-font-family: "Work Sans", sans-serif;
+    --overpass-font-weight-400: 400;
+    --overpass-font-weight-700: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./assets/images/background-pattern-mobile.svg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(275, 100%, 97%);
+    /* padding: 1rem;
+    margin: 1.5rem; */
+    height: 100vh;
+
+    font-family: "Work Sans",
+        sans-serif;
+}
+
+
+/* 
+.background {
+    display: grid 1fr 4fr;
+    background-color: hsl(275, 100%, 97%);
+} */
+
+/* .background {
+    background-image: url("./assets/images/background-pattern-mobile.svg");
+
+} */
+
+main {
+    background-color: hsl(0, 0%, 100%);
+    margin-inline: 2rem;
+}
+
+h1 {
+    color: blueviolet;
+}
+
+
+.question-btn {
+    display: flex;
+    min-width: 300px;
+    background-color: hsl(0, 0%, 100%);
+    border: none;
+}
+
+hr {
+    width: 80%;
+    justify-self: center;
+}
+
+.hidden {
+    display: none;
+}
+
+@media(min-width:375px) {
+    body {
+        background-image: url(./assets/images/background-pattern-desktop.svg);
+    }
+}
