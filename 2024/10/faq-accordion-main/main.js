@@ -1,7 +1,16 @@
-const queButton = document.querySelectorAll(".question-btn");
+const queButtons = document.querySelectorAll(".question-btn");
 
-console.log(queButton);
-queButton.addEventLi;
-// queButton.addEventListener("click"){
-//     console.log("wed")
-// }
+queButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        const headerContainer = button.querySelector(".header-container");
+        const answer = button.querySelector(".answer");
+
+        answer.classList.toggle("visible");
+
+        const plusIcon = headerContainer.querySelector(".plus");
+        const minusIcon = headerContainer.querySelector(".minus");
+
+        plusIcon.classList.toggle("hidden");
+        minusIcon.classList.toggle("hidden");
+    });
+});
