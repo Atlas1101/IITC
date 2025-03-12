@@ -1,0 +1,283 @@
+{
+    "recipes": [
+        {
+            "id": 1,
+            "title": "Chocolate Cake",
+            "image": "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?q=80&w=1050&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "ingredients": [
+                "2 cups of all-purpose flour",
+                "1 cup of granulated sugar",
+                "1/2 cup of unsweetened cocoa powder",
+                "1 tsp of baking powder",
+                "1/2 tsp of baking soda",
+                "1/4 tsp of salt",
+                "1 cup of milk",
+                "2 large eggs",
+                "1/2 cup of vegetable oil",
+                "1 tsp of vanilla extract"
+            ],
+            "instructions": [
+                "Preheat the oven to 350°F (175°C).",
+                "In a large mixing bowl, combine the flour, sugar, cocoa powder, baking powder, baking soda, and salt.",
+                "Add milk, eggs, oil, and vanilla to the dry ingredients and mix until smooth.",
+                "Pour the batter into a greased 9-inch cake pan.",
+                "Bake for 30 minutes or until a toothpick comes out clean.",
+                "Let cool before serving."
+            ],
+            "category": "Dessert"
+        },
+        {
+            "id": 2,
+            "title": "Spaghetti Carbonara",
+            "image": "https://images.unsplash.com/photo-1588013273468-315fd88ea34c?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "ingredients": [
+                "200g of dried spaghetti",
+                "100g of pancetta, diced",
+                "2 large eggs",
+                "50g of grated parmesan cheese",
+                "1 clove of garlic, minced",
+                "Salt and black pepper to taste"
+            ],
+            "instructions": [
+                "Bring a pot of salted water to a boil and cook the spaghetti until al dente.",
+                "While the pasta cooks, fry the pancetta in a pan over medium heat until crispy.",
+                "In a bowl, whisk together the eggs and parmesan cheese.",
+                "Drain the spaghetti and reserve 1/2 cup of pasta water.",
+                "Add the spaghetti to the pan with the pancetta and garlic, tossing to combine.",
+                "Remove from heat and quickly stir in the egg mixture, adding pasta water to achieve a creamy sauce.",
+                "Season with salt and pepper and serve immediately."
+            ],
+            "category": "Main Course"
+        },
+        {
+            "id": 3,
+            "title": "Greek Salad",
+            "image": "https://images.unsplash.com/photo-1606735584785-1848fdcaea57?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "ingredients": [
+                "3 large tomatoes, chopped",
+                "1 cucumber, sliced",
+                "1 red onion, thinly sliced",
+                "200g of feta cheese, cubed",
+                "A handful of black olives",
+                "2 tbsp of olive oil",
+                "1 tbsp of red wine vinegar",
+                "Salt and oregano to taste"
+            ],
+            "instructions": [
+                "In a large salad bowl, combine the tomatoes, cucumber, and red onion.",
+                "Add the feta cheese and olives on top.",
+                "Drizzle with olive oil and red wine vinegar.",
+                "Sprinkle with salt and oregano.",
+                "Toss gently and serve fresh."
+            ],
+            "category": "Salad"
+        },
+        {
+            "id": 4,
+            "title": "Chicken Curry",
+            "image": "https://images.unsplash.com/photo-1627366422957-3efa9c6df0fc?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "ingredients": [
+                "500g of chicken, cubed",
+                "2 medium onions, diced",
+                "3 ripe tomatoes, pureed",
+                "1 tbsp of turmeric powder",
+                "1 tbsp of cumin powder",
+                "1 tbsp of coriander powder",
+                "1 tsp of chili powder",
+                "3 cloves of garlic, minced",
+                "1-inch piece of ginger, grated",
+                "2 tbsp of cooking oil",
+                "Salt to taste",
+                "1 cup of water"
+            ],
+            "instructions": [
+                "Heat the oil in a pan and sauté the onions until golden brown.",
+                "Add garlic and ginger, cooking for 2 minutes until fragrant.",
+                "Add the spices (turmeric, cumin, coriander, and chili) and stir well.",
+                "Add the chicken pieces and cook until lightly browned.",
+                "Pour in the tomato puree and mix to coat the chicken.",
+                "Add water, cover, and simmer for 20 minutes until the chicken is tender.",
+                "Serve hot with rice or naan."
+            ],
+            "category": "Main Course"
+        },
+        {
+            "id": 5,
+            "title": "Pancakes",
+            "image": "https://images.unsplash.com/photo-1450152021501-598b36b17449?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "ingredients": [
+                "1 cup of all-purpose flour",
+                "1 tbsp of sugar",
+                "1 tsp of baking powder",
+                "1/4 tsp of salt",
+                "1 large egg",
+                "1 cup of milk",
+                "2 tbsp of melted butter or vegetable oil"
+            ],
+            "instructions": [
+                "In a bowl, mix flour, sugar, baking powder, and salt.",
+                "In another bowl, whisk together the egg, milk, and melted butter.",
+                "Combine the wet and dry ingredients, mixing until just combined (lumps are okay).",
+                "Heat a non-stick skillet over medium heat and grease lightly.",
+                "Pour 1/4 cup of batter onto the skillet for each pancake.",
+                "Cook until bubbles form on the surface, then flip and cook until golden brown.",
+                "Serve warm with syrup or toppings of choice."
+            ],
+            "category": "Breakfast"
+        },
+        {
+            "id": 6,
+            "title": "Vegetable Stir-Fry",
+            "image": "https://images.unsplash.com/photo-1599297915779-0dadbd376d49?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "ingredients": [
+                "1 red bell pepper, sliced",
+                "1 broccoli head, chopped into florets",
+                "1 carrot, julienned",
+                "1 cup of snap peas",
+                "2 tbsp of soy sauce",
+                "1 tbsp of sesame oil",
+                "2 cloves of garlic, minced",
+                "1 tsp of grated ginger",
+                "Optional: 1 tbsp of cornstarch mixed with 2 tbsp of water for thickening"
+            ],
+            "instructions": [
+                "Heat sesame oil in a large wok or skillet over high heat.",
+                "Add garlic and ginger, stir-frying for 1 minute.",
+                "Add the carrots, broccoli, and snap peas. Cook for 4–5 minutes until tender-crisp.",
+                "Add the red bell pepper and cook for another 2 minutes.",
+                "Stir in the soy sauce and cornstarch slurry (if using) and cook for 1–2 minutes until sauce thickens.",
+                "Serve immediately with rice or noodles."
+            ],
+            "category": "Vegan"
+        },
+        {
+            "id": 7,
+            "title": "Fish Tacos",
+            "image": "https://images.unsplash.com/photo-1512838243191-e81e8f66f1fd?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "ingredients": [
+                "2 fillets of white fish (e.g., cod or tilapia)",
+                "1 tbsp of olive oil",
+                "1 tsp of paprika",
+                "1/2 tsp of garlic powder",
+                "1/2 tsp of cumin",
+                "Salt and pepper to taste",
+                "4 small tortillas",
+                "1 cup of shredded cabbage",
+                "1/4 cup of sour cream",
+                "Juice of 1 lime"
+            ],
+            "instructions": [
+                "Preheat a grill or pan over medium-high heat.",
+                "Rub the fish fillets with olive oil, paprika, garlic powder, cumin, salt, and pepper.",
+                "Grill or pan-fry the fish for 3–4 minutes per side until cooked through.",
+                "Warm the tortillas on a dry skillet or in the oven.",
+                "Assemble tacos by placing fish, shredded cabbage, sour cream, and a squeeze of lime in each tortilla.",
+                "Serve immediately."
+            ],
+            "category": "Seafood"
+        },
+        {
+            "id": 8,
+            "title": "Beef Stroganoff",
+            "image": "https://images.unsplash.com/photo-1548869206-93b036288d7e?q=80&w=995&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "ingredients": [
+                "500g of beef strips",
+                "200g of mushrooms, sliced",
+                "1 medium onion, diced",
+                "2 cloves of garlic, minced",
+                "1 cup of beef broth",
+                "1/2 cup of sour cream",
+                "1 tbsp of Dijon mustard",
+                "2 tbsp of flour",
+                "2 tbsp of butter",
+                "Salt and pepper to taste",
+                "Optional: Fresh parsley for garnish"
+            ],
+            "instructions": [
+                "Season the beef strips with salt and pepper.",
+                "Heat butter in a skillet and sear the beef until browned. Remove and set aside.",
+                "In the same skillet, sauté onions and garlic until soft.",
+                "Add mushrooms and cook until browned.",
+                "Sprinkle flour over the vegetables and stir well.",
+                "Gradually add the beef broth, stirring to avoid lumps.",
+                "Stir in sour cream and Dijon mustard, then add the beef back to the skillet.",
+                "Simmer for 10 minutes until the sauce thickens.",
+                "Serve hot over noodles or rice, garnished with parsley."
+            ],
+            "category": "Main Course"
+        },
+        {
+            "id": 9,
+            "title": "Tomato Soup",
+            "image": "https://images.unsplash.com/photo-1629978444632-9f63ba0eff47?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "ingredients": [
+                "5 ripe tomatoes, chopped",
+                "1 medium onion, diced",
+                "2 garlic cloves, minced",
+                "2 cups of vegetable stock",
+                "1 tbsp of olive oil",
+                "1 tsp of dried basil",
+                "Salt and pepper to taste",
+                "Optional: 1/4 cup of cream for richness"
+            ],
+            "instructions": [
+                "Heat olive oil in a large pot over medium heat.",
+                "Sauté the onion and garlic until fragrant and soft.",
+                "Add the chopped tomatoes and basil, cooking for 10 minutes.",
+                "Pour in the vegetable stock and bring to a boil.",
+                "Lower the heat and simmer for 15 minutes.",
+                "Blend the soup until smooth using an immersion blender or regular blender.",
+                "Optional: Stir in cream for added richness.",
+                "Serve hot with crusty bread."
+            ],
+            "category": "Soup"
+        },
+        {
+            "id": 10,
+            "title": "Chocolate Chip Cookies",
+            "image": "https://images.unsplash.com/photo-1584847801423-852691e41bc7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "ingredients": [
+                "2 cups of all-purpose flour",
+                "1 cup of granulated sugar",
+                "1/2 cup of brown sugar",
+                "1/2 tsp of baking soda",
+                "1/4 tsp of salt",
+                "1 cup of unsalted butter, softened",
+                "1 large egg",
+                "1 tsp of vanilla extract",
+                "1 cup of chocolate chips"
+            ],
+            "instructions": [
+                "Preheat the oven to 350°F (175°C).",
+                "In a bowl, mix flour, baking soda, and salt.",
+                "In another bowl, cream together butter, granulated sugar, and brown sugar.",
+                "Add the egg and vanilla extract to the butter mixture and mix well.",
+                "Gradually add the dry ingredients to the wet ingredients, mixing until just combined.",
+                "Fold in the chocolate chips.",
+                "Drop spoonfuls of dough onto a baking sheet lined with parchment paper.",
+                "Bake for 10–12 minutes until the edges are golden brown.",
+                "Let cool before serving."
+            ],
+            "category": "Dessert"
+        },
+        {
+            "id": 11,
+            "title": "Caesar Salad",
+            "image": "https://images.unsplash.com/photo-1669283714145-f97867f6c238?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "ingredients": [
+                "1 head of romaine lettuce, chopped",
+                "1/2 cup of croutons",
+                "1/4 cup of grated parmesan cheese",
+                "1/4 cup of Caesar dressing",
+                "Optional: Grilled chicken or shrimp for protein"
+            ],
+            "instructions": [
+                "In a large bowl, toss the chopped romaine lettuce with Caesar dressing.",
+                "Add croutons and parmesan cheese, mixing gently to combine.",
+                "Optional: Top with grilled chicken or shrimp for a more filling meal.",
+                "Serve immediately."
+            ],
+            "category": "Salad"
+        }
+    ]
+}

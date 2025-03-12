@@ -1,0 +1,44 @@
+{
+    "tasks": [
+        {
+            "id": 1,
+            "title": "Complete React Tutorial",
+            "description": "Finish the ReactJS tutorial on Codecademy",
+            "dueDate": "2023-12-15",
+            "priority": "High",
+            "status": "Pending"
+        },
+        {
+            "id": 2,
+            "title": "Build a Simple To-Do App",
+            "description": "Create a basic to-do application with React",
+            "dueDate": "2023-12-20",
+            "priority": "Medium",
+            "status": "In Progress"
+        },
+        {
+            "id": 3,
+            "title": "Learn Redux",
+            "description": "Understand state management with Redux",
+            "dueDate": "2023-12-25",
+            "priority": "Low",
+            "status": "Pending"
+        },
+        {
+            "id": 4,
+            "title": "Deploy React App to Netlify",
+            "description": "Deploy the React to-do app to Netlify",
+            "dueDate": "2023-12-30",
+            "priority": "High",
+            "status": "Pending"
+        },
+        {
+            "id": 5,
+            "title": "Explore React Hooks",
+            "description": "Learn about custom hooks and their use cases",
+            "dueDate": "2024-01-05",
+            "priority": "Medium",
+            "status": "Pending"
+        }
+    ]
+}
